@@ -2,8 +2,8 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: # the website title (if blank, full name will be used instead)
-first_name: Kevin SeungWhan
+title: blank # the website title (if blank, full name will be used instead)
+first_name: "Kevin" SeungWhan
 middle_name: 
 last_name: Chung
 email: schung58@illinois.edu
