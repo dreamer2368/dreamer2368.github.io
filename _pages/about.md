@@ -6,7 +6,7 @@ description: Graduate researcher in <a href="https://illinois.edu/">University o
 
 profile:
   align: right
-  image: img/prof_pic.jpg
+  image: prof_pic.jpg
   address: >
     <p>555 your office number</p>
     <p>123 your address street</p>
