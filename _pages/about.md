@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-description: <a href="#">Affiliations</a>. Address. Contacts. Moto. Etc.
+description: Graduate researcher in <a href="https://illinois.edu/">University of Illinois</a> <!-- Address. Contacts. Moto. Etc. -->
 
 profile:
   align: right
