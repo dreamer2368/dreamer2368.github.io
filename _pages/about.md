@@ -1,8 +1,9 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 description: Graduate researcher in <a href="https://illinois.edu/">University of Illinois</a> <!-- Address. Contacts. Moto. Etc. -->
+order: 1
 
 profile:
   align: right
