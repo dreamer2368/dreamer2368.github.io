@@ -1,4 +1,10 @@
 _site
+_cv/*.aux
+_cv/*.out
+_cv/*.dvi
+_cv/*.log
+_cv/*.gz
+_cv/*.pdf
 .bundle
 .sass-cache
 .jekyll-metadata

@@ -1,0 +1,258 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage{multicol}
+\usepackage{bold-extra}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+}
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{Seung Whan Chung} % Your name
+%\address{502 E Michigan Ave. Apt 20, Urbana, IL 61801} % Your address
+%\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
+\address{PhD Student \\ Theoretical and Applied Mechanics \\ University of Illinois at Urbana-Champaign}
+\address{(+1)~217~417~1921 \\ schung58@illinois.edu \\ \href{https://www.linkedin.com/in/kevin-seung-whan-chung}{linkedin}} % Your phone number and email
+%\address{https://-}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+{\bf University of Illinois at Urbana-Champaign} \hfill {\em January 2017 - Expected: May 2021} 
+\\ Ph.\ D in Theoretical and Applied Mechanics (candidate) \hfill {GPA: 4.0/4.0}\\
+{\bf University of Illinois at Urbana-Champaign} \hfill {\em August 2014 - December 2016} 
+\\ M.\ S in Theoretical and Applied Mechanics \hfill {GPA: 3.88/4.0}\\
+{\bf Seoul National University} \hfill {\em March 2008 - February 2014} 
+\\ B.\ S. in Mechanical and Aerospace Engineering \hfill {GPA: 3.96/4.3}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	RESEARCH INTERESTS
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{Research Interests}
+%Adjoint-based optimization, Chaotic dynamics, flow control, Compressible turbulence
+%%Chaos, Control, Optimization, Adjoint, Nonlinear dynamics, Data-driven model-reduction
+%\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Research}
+\begin{rSubsection}{Multi-point penalty-based optimization for chaotic flow control}{}{}{}
+\item[] \textit{Graduate researcher} \hfill \textit{University of Illinois at Urbana-Champaign}
+\item[] Advisor: Prof. Jonathan B. Freund \hfill December 2019 - Present
+\item Quantified and analyzed optimization performance degradation in chaotic dynamical systems.
+\item Developed multi-point penalty-based optimization framework for non-convex optimization of chaotic flows.
+\item Demonstrated the method in various chaotic flow control optimizations,
+from 1D Kuramoto--Sivashinsky equation to 3D turbulent Kolmogorov flow.
+\item In preparation for a publication.
+\end{rSubsection}
+
+\begin{rSubsection}{Adjoint-based optimization for a supersonic jet noise}{}{}{}
+\item[] \textit{Graduate researcher} \hfill \textit{University of Illinois at Urbana-Champaign}
+\item[] Advisor: Prof. Jonathan B. Freund \hfill May 2017 - December 2019
+\item Implemented a compressible Mach-1.3 jet simulation,
+using a Fortran-based Navier-Stokes solver with energy-stable high-order finite-difference discretization.
+\item Verified turbulence development of the jet
+\item Implemented Ffowcs-Williams-Hawkings (FWH) solver to validate sound radiation of the jet
+\item Performed the jet noise control optimization using $10^4$ CPUs, and quantified optimization performance degradation in the chaotic turbulent jet.
+\end{rSubsection}
+
+\begin{rSubsection}{Sensitivity algorithm for particle-in-cell (PIC) plasma kinetics}{}{}{}
+\item[] \textit{Graduate researcher} \hfill \textit{Center for Exascale Simulation of Plasma-Coupled Combustion}
+\item[] Advisor: Prof. Jonathan B. Freund \hfill January 2015 - January 2017
+\item[] \textit{Student intern} \hfill \textit{Sandia National Laboratory}
+\item[] Mentor: Dr. Stephen D. Bond, Dr. Eric C. Cyr \hfill January 2017 - May 2017
+\smallskip
+%\item Developed a fortran-based 1D PIC-MCC code to carry out plasma kinetics simulations.
+\item Formulated discrete, particle-exact sensitivity in PIC simulation,
+and demonstrated sensitivity degradation due to chaotic particle dynamics.
+\item Participated in a 4-month student internship at Sandia National Laboratory for collaboration.
+\item Developed new particle-pdf sensitivity method
+which avoids the chaotic effect of particle dynamics.
+Published a peer-reviewed journal paper.
+\item Demonstrated the sensitivity algorithm
+for the sensitivity of Debye shielding response and sheath edge formation.
+\item Developed a Fortran-based 2D finite-volume Vlasov solver for validation of the new sensitivity algorithm.
+\end{rSubsection}
+
+\end{rSection}
+%------------------------------------------------
+
+\begin{rSection}{Teaching}
+
+%------------------------------------------------
+
+\begin{rSubsection}{TAM 210/211: Statics}{Spring 2020}{Teaching Assistant}{University of Illinois at Urbana-Champaign}
+\item Ranked as Excellent in the list of Spring 2020 semester.
+\item Conducted discussion sessions (1 time/wk) for 27 students.
+\item Prepared in-depth solution procedures.
+\item Provided extended office hours: 6 hrs/wk
+\end{rSubsection}
+
+%------------------------------------------------
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Publications}
+\par
+\textbf{S.\ W.\ Chung} \& J.\ B.\ Freund,
+``A proper gradient-based optimization framework for optimal control of chaotic turbulent flows,"
+\textit{In preparation}.
+\par
+\textbf{S.\ W.\ Chung}, S.\ D.\ Bond, E.\ C.\ Cyr, \& J.\ B.\ Freund,
+``Regular sensitivity computation avoiding chaotic effects in particle-in-cell plasma methods,"
+\textit{Journal of Computational Physics}, \textbf{400} (2020).
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Presentations}
+\textbf{S.\ W.\ Chung} \& J.\ B.\ Freund, ``Multi-point augmented Lagrangian optimization for chaotic flows,"
+\textit{SIAM Conference on Computational Science and Engineering}, (2021).
+
+\par
+\textbf{S.\ W.\ Chung} \& J.\ B.\ Freund. "Multi-point augmented Lagrangian optimization for chaotic flows,"
+\textit{Bulletin of the American Physical Society}, \textbf{65} (2020).
+
+\par
+\textbf{S.\ W.\ Chung} \& J.\ B.\ Freund,
+``Adjoint­-based analysis of controllability of turbulent jet noise,"
+\textit{Bulletin of the American Physical Society}, \textbf{64} (2019).
+
+\par
+\textbf{S.\ W.\ Chung}, S.\ D.\ Bond, E.\ C.\ Cyr, \& J.\ B.\ Freund,
+``Regular sensitivity computation avoiding chaotic effects in particle-in-cell plasma methods,"
+\textit{International Conference on Numerical Simulation of Plasmas}, (2019).
+
+\par
+\textbf{S.\ W.\ Chung}, S.\ D.\ Bond, E.\ C.\ Cyr, \& J.\ B.\ Freund, ``Sensitivity analysis in particle-in-cell methods,"
+\textit{SIAM Conference on Computational Science and Engineering}, (2019).
+
+\par
+\textbf{S.\ W.\ Chung}, R.\ Vishnampet, D.\ Bodony, \& J.\ B.\ Freund, ``Adjoint-based sensitivity of jet noise to near-nozzle forcing,"
+\textit{Bulletin of the American Physical Society}, \textbf{62} (2017).
+\end{rSection}
+
+%------------------------------------------------
+
+\begin{rSection}{Research tools developed}
+\begin{rSubsection}{\texttt{PASS}: Particle Adjoint Sensitivity Sandbox}{}
+{with J.\ B.\ Freund}{\url{https://github.com/dreamer2368/PASS}}
+\item A Fortran-based 1D Particle-in-Cell -- Monte-Carlo-Collision code for plasma kinetics simulations.
+\item Particle-exact/particle-pdf sensitivity solver
+\end{rSubsection}
+\begin{rSubsection}{\texttt{magudi}: Dual-consistent, Discrete-exact Adjoint solver for Compressible Flows}{}
+{with R.\ Vishnampet, J.\ B.\ Freund}{\url{https://bitbucket.org/xpacc-dev/magudi/}}
+\item Created verification cases to ensure discrete-exactness.
+\item Developed a Python-based Bash/Flux-script generator for large-scale gradient-based optimization.
+\item Incorporated multi-point penalty-based optimization framework for chaotic dynamical systems.
+\end{rSubsection}
+\begin{rSubsection}{\texttt{adjoint playground}: Adjoint, penalty-based optimization for chaotic flow controls}{}
+{with J.\ B.\ Freund}{\em Available upon request}
+\item A MATLAB-based penalty-based optimization framework for various chaotic dynamical systems.
+\item Provides a discrete-exact adjoint gradient for semi-implicit Runge-Kutta 4th-order time integrator.
+\end{rSubsection}
+\end{rSection}
+
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+%------------------------------------------------
+
+\begin{rSection}{Awards/Fellowships}
+
+{\bf Jeong-Song Fellowship}\hfill 2014 - 2016\\
+{\it Jeong-Song Cultural Foundation, Korea}\hfill \$110,000
+
+{\bf Honor Graduation Award}\hfill 2014\\
+{\it Seoul National University}\hfill Ranked 5 of 139 (summa cum laude)
+
+{\bf Presidential Science Fellowship}\hfill 2008 - 2014\\
+{\it M. B. Lee, the President of Republic of Korea}\hfill \$40,000
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Graduate Courses}
+\hspace{-.7cm}
+\begin{tabular}{p{4.5cm}p{5cm}l}
+\textbf{Fluid Mechanics} & \textbf{Computational Methods} & \textbf{Applied Mechanics}\\
+Inviscid Flow & Computational Mechanics & Control System Theory \& Design \\
+Viscous Flow & Uncertainty Quantification &  Solid Mechanics I \\
+Instability and Transition & Asymptotic Method & Combustion Fundamentals \\
+Turbulence & Mathematical Methods II & Non-Newtonian Fluid Mechanics \& Rheology
+\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Skills}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Computer Languages &  Fortran, MATLAB, Python\\%, C/C++\\
+Parallel Programming & MPI \\
+Scripting & Python, Bash, Flux \\
+Compiling & Make, CMake \\
+Documentation & \LaTeX, Vi/Vim, Mendeley \\
+Visualization and I/O & PLOT3D, Paraview \\
+Presentation & Beamer, Keynote, Adobe Illustrator/Premiere \\
+\end{tabular}
+
+\end{rSection}
+
+%\clearpage
+%
+%%------------------------------------------------
+%
+%\begin{rSection}{Work Experience}
+%
+%\begin{rSubsection}{United States Army}{October 2009 - August 2011}{Sergeant}{HHC, 302D BSB, 1HBCT,  2ID, 8th Army}
+%\item Served as a Korean Augmentation To the United States Army (KATUSA).
+%\item Worked as a human resources specialist (42A) in the Battalion S-1.
+%\item Finished Warrior Leadership Course (WLC) to be a non-commisioned officer (NCO).
+%\item As a Sr.\ KATUSA, took in charge of 20 KATUSAs in the company,
+%and facilitated communication between the United States Army and the Republic of Korea Army.
+%\item Awarded Army Achievement Medal (AAM) and Army Commendation Medal (ARCOM) for the extraordinary leadership during the service.
+%\end{rSubsection}
+%
+%%------------------------------------------------
+%
+%\end{rSection}
+
+\end{document}
