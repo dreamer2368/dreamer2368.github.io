@@ -13,12 +13,13 @@ profile:
 #    <p>123 your address street</p>
 #    <p>Your City, State 12345</p>
 
-news: true  # includes a list of news items
+news: false  # includes a list of news items
+education: true #  includes a list of education items
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
 
-I'm a graduate student in <a href="https://mechse.illinois.edu/">the Department of Mechanical Science and Engineering</a> at <a href="https://illinois.edu/">the University of Illinois at Urbana-Champaign</a>. I'm advised by <a href="http://scholar.google.com/citations?user=BJAfVh0AAAAJ&hl=en">Professor Jonathan B. Freund</a>, and my research interest is sensitivity analysis and optimal control of chaotic dynamical systems, ranging from plasma kinetics to turbulent flows.
+I'm a graduate student in <a href="https://mechse.illinois.edu/">the Department of Mechanical Science and Engineering</a> at <a href="https://illinois.edu/">the University of Illinois at Urbana-Champaign</a>. I'm advised by Professor <a href="http://scholar.google.com/citations?user=BJAfVh0AAAAJ&hl=en">Jonathan B. Freund</a>, and my research interest is sensitivity analysis and optimal control of chaotic dynamical systems, ranging from plasma kinetics to turbulent flows.
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com){:target="\_blank"}. You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
