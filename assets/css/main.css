@@ -66,7 +66,7 @@ a:hover:after, table.table a:hover:after { width: 100%; }
 
 .news table td { font-size: 1rem; color: var(--global-text-color); }
 
-.news table th { color: var(--global-text-color); }
+.news table th { width: 5rem; color: var(--global-text-color); }
 
 .social { text-align: center; }
 .social .contact-icon { font-size: 3rem; }
