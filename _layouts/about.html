@@ -22,6 +22,9 @@ layout: default
           {{ page.profile.address }}
         </div>
       {% endif %}
+      {% if page.profile.cv %}
+        <a href="{{ page.profile.cv | prepend: '/assets/pdf/' | relative_url }}">Curriculum Vitae</a>
+      {% endif %}
     </div>
     {% endif %}
 

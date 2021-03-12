@@ -8,13 +8,11 @@ order: 1
 profile:
   align: right
   image: prof_pic.jpg
-  address: >
-    <p><a href="/assets/pdf/cv_4.pdf">Curriculum Vitae</a></p>
-<!--
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
--->
+  cv: cv_4.pdf
+#  address: >
+#    <p>555 your office number</p>
+#    <p>123 your address street</p>
+#    <p>Your City, State 12345</p>
 
 news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
