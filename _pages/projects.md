@@ -2,14 +2,14 @@
 layout: page
 title: Research
 permalink: /research/
-description: A growing collection of your cool projects.
+description:
 nav: false
 order: 2
 ---
 
 <div class="projects grid">
 
-  {% assign sorted_projects = site.projects | sort: "importance" %}
+  {% assign sorted_projects = site.projects | where: 'show', 'true' | sort: "importance" %}
   {% for project in sorted_projects %}
   <div class="grid-item">
     {% if project.redirect %}
@@ -22,7 +22,7 @@ order: 2
         <img src="{{ project.img | relative_url }}" alt="project thumbnail">
         {% endif %}
         <div class="card-body">
-          <h2 class="card-title text-lowercase">{{ project.title }}</h2>
+          <h2 class="card-title">{{ project.title }}</h2>
           <p class="card-text">{{ project.description }}</p>
           <div class="row ml-1 mr-1 p-0">
             {% if project.github %}

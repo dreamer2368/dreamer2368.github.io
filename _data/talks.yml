@@ -1,0 +1,72 @@
+# talks
+- conference: SIAM Conference on Computational Science and Engineering
+  invited: false
+  year: 2021
+  title: Multi-point augmented Lagrangian optimization for chaotic flows
+  speakers:
+    - speaker: S. W. Chung
+    - speaker: J. B. Freund
+
+- conference: University of Illinois at Urbana-Champaign
+  invited: true
+  seminar: Fluid Mechanics Seminar
+  year: 2020
+  title: Sensitivity Calculation and Gradient-based Optimization for Chaotic Dynamical Systems
+  speakers:
+    - speaker: S. W. Chung
+
+- conference: Bulletin of the American Physical Society
+  invited: false
+  year: 2020
+  number: 65
+  title: Multi-point augmented Lagrangian optimization for chaotic flows
+  speakers:
+    - speaker: S. W. Chung
+    - speaker: J. B. Freund
+
+- conference: Bulletin of the American Physical Society
+  invited: false
+  year: 2019
+  number: 64
+  title: Adjoint-based analysis of controllability of turbulent jet noise
+  speakers:
+    - speaker: S. W. Chung
+    - speaker: J. B. Freund
+
+- conference: International Conference on Numerical Simulation of Plasmas
+  invited: false
+  year: 2019
+  title: Regular sensitivity computation avoiding chaotic effects in particle-in-cell plasma methods
+  speakers:
+    - speaker: S. W. Chung
+    - speaker: S. D. Bond
+    - speaker: E. C. Cyr
+    - speaker: J. B. Freund
+
+- conference: SIAM Conference on Computational Science and Engineering
+  invited: false
+  year: 2019
+  title: Sensitivity analysis in particle-in-cell methods
+  speakers:
+    - speaker: S. W. Chung
+    - speaker: S. D. Bond
+    - speaker: E. C. Cyr
+    - speaker: J. B. Freund
+
+- conference: Bulletin of the American Physical Society
+  invited: false
+  number: 62
+  year: 2017
+  title: Adjoint-based sensitivity of jet noise to near-nozzle forcing
+  speakers:
+    - speaker: S. W. Chung
+    - speaker: R. Vishnampet
+    - speaker: D. Bodony
+    - speaker: J. B. Freund
+
+- conference: Sandia National Laboratory
+  invited: true
+  year: 2017
+  title: Sensitivity Analysis in Particle-in-cell methods
+  speakers:
+    - speaker: S. W. Chung

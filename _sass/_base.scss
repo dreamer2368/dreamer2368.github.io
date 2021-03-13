@@ -171,6 +171,7 @@ a, table.table a {
 .section-header {
   // @include section_border;
   margin-bottom: 1.5rem;
+  border-bottom: 1px solid $grey-color-light;
 
   h2 {
     // @include sans;
@@ -337,7 +338,8 @@ footer.sticky-bottom {
 
 .projects {
   .grid-item {
-    width: 250px;
+    // width: 250px;
+    width: 100%;
     margin-bottom: 10px;
     a {
       color: black;
@@ -349,6 +351,9 @@ footer.sticky-bottom {
   }
   .card img {
     width: 100%;
+  }
+  .card-title {
+    color: black;
   }
 }
 
