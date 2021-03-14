@@ -10,20 +10,6 @@
     Last updated: {{ "now" | date: '%B %d, %Y' }}.
     {% endif %}
   </div>
-  <!-- Parse the Latex divs with Katex-->
-  <script type="text/javascript">
-    $("script[type='math/tex']").replaceWith(
-      function(){
-        var tex = $(this).text();
-        return katex.renderToString(tex, {displayMode: false});
-    });
-
-    $("script[type='math/tex; mode=display']").replaceWith(
-      function(){
-        var tex = $(this).text();
-        return katex.renderToString(tex.replace(/%.*/g, ''), {displayMode: true});
-    });
-  </script>
 </footer>
 {% else %}
 <footer class="sticky-bottom mt-5">
@@ -37,19 +23,5 @@
     Last updated: {{ "now" | date: '%B %d, %Y' }}.
     {% endif %}
   </div>
-  <!-- Parse the Latex divs with Katex-->
-  <script type="text/javascript">
-    $("script[type='math/tex']").replaceWith(
-      function(){
-        var tex = $(this).text();
-        return katex.renderToString(tex, {displayMode: false});
-    });
-
-    $("script[type='math/tex; mode=display']").replaceWith(
-      function(){
-        var tex = $(this).text();
-        return katex.renderToString(tex.replace(/%.*/g, ''), {displayMode: true});
-    });
-  </script>
 </footer>
 {% endif %}
