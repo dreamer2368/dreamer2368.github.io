@@ -76,7 +76,7 @@
     <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
     <div class="container">
       
-      <a class="navbar-brand title font-weight-lighter" href="http://localhost:4000/">
+      <a class="navbar-brand title font-weight-lighter" href="/">
        "Kevin" SeungWhan <span class="font-weight-bold">Chung</span>
       </a>
       
@@ -168,7 +168,21 @@
   </header>
 
   <article>
-    
+    <p>Particle-in-cell (PIC) method is an effective simulation tool for plasma kinetics, where velocity distribution of plasma species deviates from equilibrium and often does not remain stationary.
+While mesh-based methods suffer from high-dimensional space-velocity phase space, PIC method utilizes coarse-grained Lagrangian particles to represent  the plasma distribution as a statistical sample, with amenable computational costs.</p>
+
+<p>PIC simulation can benefit from sensitivity analysis, which provides a gradient of a quantity-of-interest \(\mathcal{J}\) to parameters-of-interests \(\mathbf{\Theta}\). Such gradient can be used to:</p>
+<ul>
+  <li>design optimization</li>
+  <li>uncertainty quantification.</li>
+</ul>
+
+<p>Computing the sensitivity in PIC simulations, however, is challenging.
+Simulation particles mimicks the chaotic \(N\)-body dynamics of actual molecules, which are extremely sensitive to their initial conditions.
+While there is an ‘useful’ sensitivity of the plasma distribution as a whole,
+exploding sensitivities of individual particles mask it to be computed exactly.</p>
+
+<p>I proposed and developed the particle-pdf approach, where the adjoint particles represent the sensitivity of plasma distribution, not individual plasma particles. The proposed approach avoids chaotic sensitivities of particles and computes the useful sensitivity at a computational cost similar to the original plasma simulation.</p>
 
   </article>
 
