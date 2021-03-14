@@ -47,6 +47,10 @@
 
 
 
+<!-- Load KaTeX -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.js"></script>
+
     
 <!-- MathJax -->
 <script type="text/javascript">
@@ -72,7 +76,7 @@
     <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
     <div class="container">
       
-      <a class="navbar-brand title font-weight-lighter" href="/">
+      <a class="navbar-brand title font-weight-lighter" href="http://localhost:4000/">
        "Kevin" SeungWhan <span class="font-weight-bold">Chung</span>
       </a>
       
@@ -223,6 +227,20 @@
     
     
   </div>
+  <!-- Parse the Latex divs with Katex-->
+  <script type="text/javascript">
+    $("script[type='math/tex']").replaceWith(
+      function(){
+        var tex = $(this).text();
+        return katex.renderToString(tex, {displayMode: false});
+    });
+
+    $("script[type='math/tex; mode=display']").replaceWith(
+      function(){
+        var tex = $(this).text();
+        return katex.renderToString(tex.replace(/%.*/g, ''), {displayMode: true});
+    });
+  </script>
 </footer>
 
 

@@ -47,6 +47,10 @@
 
 
 
+<!-- Load KaTeX -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.js"></script>
+
     
 <!-- MathJax -->
 <script type="text/javascript">
@@ -72,7 +76,7 @@
     <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
     <div class="container">
       
-      <a class="navbar-brand title font-weight-lighter" href="/">
+      <a class="navbar-brand title font-weight-lighter" href="http://localhost:4000/">
        "Kevin" SeungWhan <span class="font-weight-bold">Chung</span>
       </a>
       
@@ -165,27 +169,32 @@
 
   <article>
     <p>Optimal flow control problem is
-to seek an optimal control <span class="inline_math">\( \mathbf{\Theta}^{\ast} \)</span>
-that minimizes a control objective <span class="inline_math">\( \mathcal{J} \)</span> of a flow state <span class="inline_math">\( \mathbf{q} \)</span>.<span class="intersentencespace"></span> It is often formulated as an equality-constrained optimization,</p>
-<div id="uid1" data-tralics-id="uid1" data-number="1" class="equation">\begin{equation*}
-\mathbf{\Theta}^{\ast} = \mathrm{argmin}\;\mathcal{J}[\mathbf{q}]
-\qquad
-\text{such that}
-\qquad
-\mathcal{N}[\mathbf{q};\mathbf{\Theta}] = 0,
-\end{equation*}
-</div><p class="noindent">where the equation <span class="inline_math">\( \mathcal{N} \)</span> governs the dynamics of the flow.<span class="intersentencespace"></span> This optimization problem provides a mathematical framework
-to tackle many of both scientific and engineering goals in fluid dynamics.<span class="intersentencespace"></span></p>
+to seek an optimal control \(\mathbf{\Theta}^{\ast}\)
+that minimizes a control objective \(\mathcal{J}\) of a flow state \(\mathbf{q}\).
+It is often formulated as an equality-constrained optimization,</p>
+
+<center>$$\mathbf{\Theta}^{\ast} = \mathrm{argmin}\;\mathcal{J}[\mathbf{q}]$$ such that $$\mathcal{N}[\mathbf{q};\mathbf{\Theta}] = 0,$$</center>
+
+<p>where the equation \(\mathcal{N}\) governs the dynamics of the flow.
+This optimization problem provides a mathematical framework
+to tackle many of both scientific and engineering goals in fluid dynamics.</p>
+
 <p>Gradient-based methods can accelerate finding an optimal solution,
-using the gradient <span class="inline_math">\( \nabla_{\Theta}\mathcal{J} \)</span> to control.<span class="intersentencespace"></span> They are particularly effective with high-dimensional optimization spaces.<span class="intersentencespace"></span> However, this is not true for chaotic turbulent flows.<span class="intersentencespace"></span> The so-called butterfly effect amplifies the gradient exponentially in time,
-with extreme sensitivity to initial condition.<span class="intersentencespace"></span> At the same time,
-The objective <span class="inline_math">\( \mathcal{J} \)</span> becomes highly non-convex in the optimization space,
-for which any gradient-based method loses its effectiveness.<span class="intersentencespace"></span></p>
+using the gradient \(\nabla_{\Theta}\mathcal{J}\) to control.
+They are particularly effective with high-dimensional optimization spaces.
+However, this is not true for chaotic turbulent flows.
+The so-called butterfly effect amplifies the gradient exponentially in time,
+with extreme sensitivity to initial condition.
+At the same time,
+The objective \(\mathcal{J}\) becomes highly non-convex in the optimization space,
+for which any gradient-based method loses its effectiveness.</p>
+
 <p>I analyzed the mathematical mechanism of this challenge
 in the context of horseshoe mapping of chaotic dynamical systems,
-and proposed a proper optimization framework that can circumvent non-convex optimization.<span class="intersentencespace"></span> This framework is demonstrated its effectiveness on various flow control problems,
-including three-dimensional turbulent Kolmogorov flow.
-</p>
+and proposed a proper optimization framework that can circumvent non-convex optimization.
+This framework is demonstrated its effectiveness on various flow control problems,
+including three-dimensional turbulent Kolmogorov flow.</p>
+
   </article>
 
 </div>
@@ -203,6 +212,20 @@ including three-dimensional turbulent Kolmogorov flow.
     
     
   </div>
+  <!-- Parse the Latex divs with Katex-->
+  <script type="text/javascript">
+    $("script[type='math/tex']").replaceWith(
+      function(){
+        var tex = $(this).text();
+        return katex.renderToString(tex, {displayMode: false});
+    });
+
+    $("script[type='math/tex; mode=display']").replaceWith(
+      function(){
+        var tex = $(this).text();
+        return katex.renderToString(tex.replace(/%.*/g, ''), {displayMode: true});
+    });
+  </script>
 </footer>
 
 
