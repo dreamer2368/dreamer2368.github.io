@@ -132,7 +132,6 @@ plugins:
   - jekyll/scholar
   - jekyll-twitter-plugin
   - jemoji
-  - jekyll-latex
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
