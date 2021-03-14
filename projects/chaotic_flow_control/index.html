@@ -111,6 +111,13 @@
           
           
           
+          <li class="nav-item ">
+              <a class="nav-link" href="/research/">
+                Research
+                
+              </a>
+          </li>
+          
           
           
           <li class="nav-item ">
@@ -157,8 +164,28 @@
   </header>
 
   <article>
-    
-
+    <p>Optimal flow control problem is
+to seek an optimal control <span class="inline_math">\( \mathbf{\Theta}^{\ast} \)</span>
+that minimizes a control objective <span class="inline_math">\( \mathcal{J} \)</span> of a flow state <span class="inline_math">\( \mathbf{q} \)</span>.<span class="intersentencespace"></span> It is often formulated as an equality-constrained optimization,</p>
+<div id="uid1" data-tralics-id="uid1" data-number="1" class="equation">\begin{equation*}
+\mathbf{\Theta}^{\ast} = \mathrm{argmin}\;\mathcal{J}[\mathbf{q}]
+\qquad
+\text{such that}
+\qquad
+\mathcal{N}[\mathbf{q};\mathbf{\Theta}] = 0,
+\end{equation*}
+</div><p class="noindent">where the equation <span class="inline_math">\( \mathcal{N} \)</span> governs the dynamics of the flow.<span class="intersentencespace"></span> This optimization problem provides a mathematical framework
+to tackle many of both scientific and engineering goals in fluid dynamics.<span class="intersentencespace"></span></p>
+<p>Gradient-based methods can accelerate finding an optimal solution,
+using the gradient <span class="inline_math">\( \nabla_{\Theta}\mathcal{J} \)</span> to control.<span class="intersentencespace"></span> They are particularly effective with high-dimensional optimization spaces.<span class="intersentencespace"></span> However, this is not true for chaotic turbulent flows.<span class="intersentencespace"></span> The so-called butterfly effect amplifies the gradient exponentially in time,
+with extreme sensitivity to initial condition.<span class="intersentencespace"></span> At the same time,
+The objective <span class="inline_math">\( \mathcal{J} \)</span> becomes highly non-convex in the optimization space,
+for which any gradient-based method loses its effectiveness.<span class="intersentencespace"></span></p>
+<p>I analyzed the mathematical mechanism of this challenge
+in the context of horseshoe mapping of chaotic dynamical systems,
+and proposed a proper optimization framework that can circumvent non-convex optimization.<span class="intersentencespace"></span> This framework is demonstrated its effectiveness on various flow control problems,
+including three-dimensional turbulent Kolmogorov flow.
+</p>
   </article>
 
 </div>
