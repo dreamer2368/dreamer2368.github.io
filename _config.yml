@@ -140,8 +140,8 @@ plugins:
 
 scholar:
 
-  last_name: Einstein
-  first_name: [Albert, A.]
+  last_name: Chung
+  first_name: [Seung Whan]
 
   style: apa
   locale: en

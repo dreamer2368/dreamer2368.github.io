@@ -3,7 +3,7 @@ layout: page
 title: Sensitivity analysis in plasma kinetics
 description: Regular sensitivity computing algorithm in chaotic particle dynamics simulations
 img: /assets/img/pic-sensitivity/thumbnail.png
-importance: 2
+importance: 1
 show: true
 ---
 
