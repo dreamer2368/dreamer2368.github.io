@@ -64,7 +64,7 @@
     - speaker: D. Bodony
     - speaker: J. B. Freund
 
-- conference: Sandia National Laboratory
+- conference: Sandia National Laboratories
   invited: true
   year: 2017
   title: Sensitivity Analysis in Particle-in-cell methods
