@@ -1,4 +1,12 @@
 # talks
+- conference: Lawrence Livermore National Laboratory
+  invited: true
+  year: 2021
+  title: Sensitivity and Optimization within simulations of chaotic flow system
+  speakers:
+    - speaker: J. B. Freund
+    - speaker: S. W. Chung
+
 - conference: SIAM Conference on Computational Science and Engineering
   invited: false
   year: 2021
