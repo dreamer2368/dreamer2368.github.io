@@ -12,20 +12,18 @@ summary:
 Particle-in-cell (PIC) method is an effective simulation tool for plasma kinetics, where velocity distribution of plasma species deviates from equilibrium and often does not remain stationary.
 While mesh-based methods suffer from high-dimensional space-velocity phase space, PIC method utilizes coarse-grained Lagrangian particles to represent the plasma distribution with amenable computational costs.
 <div class="row">
-  <div class="col-sm-8 mt-3 mt-md-0" style="max-width: 66%;">
-    <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/pic-sensitivity/figure14.png' | relative_url }}" alt="" title="sheath configuation"/>
-  </div>
-  <div class="col-sm mt-3 mt-md-0" style="max-width: 33%;">
-    <div class="row-sm mt-md-3">
-      <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/pic-sensitivity/electron.1042.png' | relative_url }}" alt="" title="sheath configuation"/>
+    <div class="col-sm mt-3 mt-md-0" style="max-width: 33%;">
+      <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/pic-sensitivity/figure14.png' | relative_url }}" alt="" title="sheath configuation"/>
     </div>
-    <div class="row-sm mt-md-3">
-      <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/pic-sensitivity/ion.1042.png' | relative_url }}" alt="" title="sheath configuation"/>
+    <div class="col-sm mt-3 mt-md-0" style="max-width: 33%;">
+      <iframe src="https://player.vimeo.com/video/583737878?autoplay=1&loop=1&autopause=0&background=1" style="width:100%;height:100%;" frameborder="0" allow="autoplay; picture-in-picture"></iframe>
     </div>
-  </div>
+    <div class="col-sm mt-3 mt-md-0" style="max-width: 33%;">
+      <iframe src="https://player.vimeo.com/video/583741200?autoplay=1&loop=1&autopause=0&background=1" style="width:100%;height:100%;" frameborder="0" allow="autoplay; picture-in-picture"></iframe>
+    </div>
 </div>
 <div class="caption">
-    PIC simulation of a sheath edge formation: number densities of electrons and ions (left). 1D space-velocity distribution of electrons (top right) and ions (bottom right).
+    PIC simulation of a sheath edge formation: number densities of electrons and ions (left); space-velocity distribution of electrons (middle) and ions (right).
 </div>
 
 PIC simulation can benefit from sensitivity analysis, which provides a gradient of a quantity-of-interest $$\mathcal{J}$$ to parameters-of-interests $$\mathbf{\Theta}$$. Such gradient can be used to:
