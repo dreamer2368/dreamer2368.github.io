@@ -12,14 +12,16 @@ summary:
 Particle-in-cell (PIC) method is an effective simulation tool for plasma kinetics, where velocity distribution of plasma species deviates from equilibrium and often does not remain stationary.
 While mesh-based methods suffer from high-dimensional space-velocity phase space, PIC method utilizes coarse-grained Lagrangian particles to represent the plasma distribution with amenable computational costs.
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0" style="max-width: 33%;">
+    <div class="col-sm-8 p-1" style="max-width: 66%;">
       <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/pic-sensitivity/figure14.png' | relative_url }}" alt="" title="sheath configuation"/>
     </div>
-    <div class="col-sm mt-3 mt-md-0" style="max-width: 33%;">
-      <iframe src="https://player.vimeo.com/video/583737878?autoplay=1&loop=1&autopause=0&background=1" style="width:100%;height:100%;" frameborder="0" allow="autoplay; picture-in-picture"></iframe>
-    </div>
-    <div class="col-sm mt-3 mt-md-0" style="max-width: 33%;">
-      <iframe src="https://player.vimeo.com/video/583741200?autoplay=1&loop=1&autopause=0&background=1" style="width:100%;height:100%;" frameborder="0" allow="autoplay; picture-in-picture"></iframe>
+    <div class="col-sm-4 p-0" style="max-width: 33%;">
+      <div class="row-sm p-0">
+        <iframe src="https://player.vimeo.com/video/583737878?autoplay=1&loop=1&autopause=0&background=1" style="position:absolute;top:-5%;width:100%;height:60%;" frameborder="0" allow="autoplay; picture-in-picture"></iframe>
+      </div>
+      <div class="row-sm p-0">
+        <iframe src="https://player.vimeo.com/video/583741200?autoplay=1&loop=1&autopause=0&background=1" style="position:absolute;top:25%;width:100%;height:100%;" frameborder="0" allow="autoplay; picture-in-picture"></iframe>
+      </div>
     </div>
 </div>
 <div class="caption">
@@ -48,14 +50,14 @@ exploding sensitivities of individual particles mask it to be computed exactly.
 
 I proposed and developed the particle-pdf approach, where the adjoint particles represent the sensitivity of plasma distribution, not individual plasma particles. The proposed approach avoids chaotic sensitivities of particles and computes the useful sensitivity at a computational cost similar to the original plasma simulation.
 <div class="row">
-    <div class="col-sm-8 mt-3 mt-md-0" style="max-width: 66%;">
+    <div class="col-sm-8 p-1" style="max-width: 66%;">
         <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/pic-sensitivity/figure1.png' | relative_url }}" alt="" title="example image"/>
     </div>
-    <div class="col-sm-4 mt-3 mt-md-0" style="max-width: 33%;">
-      <div class="row-sm mt-md-3">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/pic-sensitivity/electron.sensitivity.png' | relative_url }}" alt="" title="sheath configuation"/>
+    <div class="col-sm-4 p-0" style="max-width: 33%;">
+      <div class="row-sm py-1">
+        <img class="img-fluid rounded" src="{{ '/assets/img/pic-sensitivity/electron.sensitivity.png' | relative_url }}" alt="" title="sheath configuation"/>
       </div>
-      <div class="row-sm mt-md-3">
+      <div class="row-sm pt-1">
         <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/pic-sensitivity/ion.sensitivity.png' | relative_url }}" alt="" title="sheath configuation"/>
       </div>
     </div>
