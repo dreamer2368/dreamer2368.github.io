@@ -25,7 +25,7 @@ While mesh-based methods suffer from high-dimensional space-velocity phase space
     </div>
 </div>
 <div class="caption">
-    PIC simulation of a sheath edge formation: number densities of electrons and ions (left); space-velocity distribution of electrons (middle) and ions (right).
+    PIC simulation of a sheath edge formation: number densities of electrons and ions (left); space-velocity distribution of electrons (top right) and ions (bottom right).
 </div>
 
 PIC simulation can benefit from sensitivity analysis, which provides a gradient of a quantity-of-interest $$\mathcal{J}$$ to parameters-of-interests $$\mathbf{\Theta}$$. Such gradient can be used to:
