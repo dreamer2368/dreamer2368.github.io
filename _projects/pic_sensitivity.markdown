@@ -3,7 +3,7 @@ layout: page
 title: Sensitivity analysis in plasma kinetics
 description: Regular sensitivity computing algorithm in chaotic particle dynamics simulations
 img: /assets/img/pic-sensitivity/thumbnail.png
-importance: 1
+importance: 2
 show: true
 summary:
   - item: Developed a fortran-based 1D PIC-MCC code to carry out plasma kinetics simulations.
