@@ -12,7 +12,8 @@ to seek an optimal control $$\mathbf{\Theta}^{\ast}$$
 that minimizes a control objective $$\mathcal{J}$$ of a flow state $$\mathbf{q}$$.
 It is often formulated as an equality-constrained optimization,
 
-<center>$$\mathbf{\Theta}^{\ast} = \mathrm{argmin}\;\mathcal{J}[\mathbf{q}]\qquad \text{such that} \qquad\mathcal{N}[\mathbf{q};\mathbf{\Theta}] = 0,$$</center>
+<center>$$\mathbf{\Theta}^{\ast} = \mathrm{argmin}\;\mathcal{J}[\mathbf{q}]$$
+$$\text{such that} \qquad\mathcal{N}[\mathbf{q};\mathbf{\Theta}] = 0,$$</center>
 
 where the equation $$\mathcal{N}$$ governs the dynamics of the flow.
 This optimization problem provides a mathematical framework
