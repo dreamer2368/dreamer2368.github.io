@@ -1,4 +1,13 @@
 # talks
+- conference: Bulletin of the American Physical Society
+  invited: false
+  year: 2021
+  number: 66
+  title: Multi-point penalty-based optimization for optimal control of chaotic turbulent flow
+  speakers:
+    - speaker: S. W. Chung
+    - speaker: J. B. Freund
+
 - conference: Lawrence Livermore National Laboratory
   invited: true
   year: 2021
