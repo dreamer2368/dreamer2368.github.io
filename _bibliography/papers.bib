@@ -3,11 +3,21 @@
 
 @article{Chung2022,
 abbr = {JCP},
-abstract = {The chaos of flow turbulence causes most quantity-of-interests J to become significantly non-convex over time, so that gradients of J soon fail to guide numerical simulations toward a useful local optimum. This challenge is investigated, and a multi-step penalty method is introduced to circumvent it, for the common case in which a relatively deterministic, and hence controllable, component of the flow is masked by the chaos. To do this the simulation time is divided into intervals, with periods approximating the chaos time scales, and solution discontinuity ∆q are introduced between the intervals. Model systems show how this temporarily enlarges search scale by making a related JA more convex. The discontinuities are then increasingly penalized to approach the ∆q → 0 physical limit. The challenge and method are illustrated with a logistics map, the Lorenz system, and an advection augmented Kuramoto–Sivashinsky Equation, before application to turbulent Kolmogorov flow, for which it far outperforms standard adjoint-based gradient search. The utility of such an optimized chaotic solution is discussed.},
+abstract = {Evidence indicates that quantities-of-interest in some turbulent flows can be controlled despite the overall chaotic dynamics.
+It is typically thought that this is via relatively deterministic, larger-scale components of the turbulence.
+However, finding such controls, if they exist, is challenging because chaos causes sensitivity gradients to explode and the search space to become intractably non-convex.
+This challenge is analyzed, and a penalty method is introduced to cope with it.
+In the new approach, the time domain is broken into segments approximately matching the chaos time scales, so that the solution within each segment is both physical and relatively deterministic.
+The initial condition of each segment is included in an adjoint-based gradient optimization, which temporarily introduces artificial $\Delta \mathbf{q}$ discontinuities in the overall solution.
+The optimization then proceeds in stages with increasing penalization of $\Delta \mathbf{q}$.
+The method is developed and illustrated for a logistic map, the Lorenz Equation, and an advection augmented Kuramoto–Sivashinsky Equation.
+These examples show how the  temporarily increases the search scale prior to the strong $\Delta \mathbf{q}\to0$ penalization that recovers a physical solution.
+It is then applied to turbulent Kolmogorov flow, for which it also far outperforms a standard adjoint-based gradient search. The utility of such an optimized chaotic solution is discussed.},
 author = {Chung, Seung Whan and Freund, Jonathan B.},
 journal = {Journal of Computational Physics},
 publisher = {Elsevier Inc.},
 title = {{An optimization method for chaotic turbulent flow}},
+volume = {457},
 year = {2022},
 html = {https://doi.org/10.1016/j.jcp.2022.111077},
 selected = {true},
