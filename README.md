@@ -119,11 +119,11 @@ Starting version [v0.3.5](https://github.com/alshedivat/al-folio/releases/tag/v0
 
 - Make changes, commit, and push!
 - After deployment, the webpage will become available at `<your-github-username>.github.io/<your-repository-name>/`.
-- The `master` branch should be used for the source code of your webpage and `gh-pages` branch (will be created on the first deployment) will be used for deployment.
+- The `main` branch should be used for the source code of your webpage and `gh-pages` branch (will be created on the first deployment) will be used for deployment.
 
 **For personal and organization webpages:**
 - Make sure you correctly named your repository as `<your-github-username>.github.io` or `<your-github-orgname>.github.io`.
-- After cloning this repository, [rename the branch](https://docs.github.com/en/github/administering-a-repository/renaming-a-branch) with the source code from `master` to `source`.
+- After cloning this repository, [rename the branch](https://docs.github.com/en/github/administering-a-repository/renaming-a-branch) with the source code from `main` to `source`.
 - Make sure the `url` and `baseurl` fields in `_config.yml` are empty.
 - Make changes, commit, and push!
 
@@ -133,9 +133,9 @@ If you need to manually re-deploy your website to GitHub pages, run the deploy s
 ```bash
 $ ./bin/deploy [--user]
 ```
-uses the `master` branch for the source code and deploys the webpage to `gh-pages`.
-The optional flag `--user` tells it to deploy to `master` and use `source` for the source code instead.
-Using `master` for deployment is a convention for [user and organization pages](https://help.github.com/articles/user-organization-and-project-pages/).
+uses the `main` branch for the source code and deploys the webpage to `gh-pages`.
+The optional flag `--user` tells it to deploy to `main` and use `source` for the source code instead.
+Using `main` for deployment is a convention for [user and organization pages](https://help.github.com/articles/user-organization-and-project-pages/).
 
 </details>
 
@@ -148,7 +148,7 @@ $ bundle exec jekyll build
 which will (re-)generate the static webpage in the `_site/` folder.
 Then simply copy the contents of the `_site/` foder to your hosting server.
 
-**Note:** Make sure to correctly set the `url` and `baseurl` fields in `_config.yml` before building the webpage. If you are deploying your webpage to `your-domain.com/your-project/`, you must set `url: your-domain.com` and `baseurl: /your-project/`. If you are deploing directly to `your-domain.com`, leave `baseurl` blank. 
+**Note:** Make sure to correctly set the `url` and `baseurl` fields in `_config.yml` before building the webpage. If you are deploying your webpage to `your-domain.com/your-project/`, you must set `url: your-domain.com` and `baseurl: /your-project/`. If you are deploying directly to `your-domain.com`, leave `baseurl` blank.
 
 </details>
 
@@ -214,7 +214,7 @@ If you have a different question, please ask using [Discussions](https://github.
 2. **Q:** I am using a custom domain (e.g., `foo.com`).
    My custom domain becomes blank in the repository settings after each deployment.
    How do I fix that? <br>
-   **A:** You need to add `CNAME` file to the `master` or `source` branch of your repository.
+   **A:** You need to add `CNAME` file to the `main` or `source` branch of your repository.
    The file should contain your custom domain name.
    (Relevant issue: [130](https://github.com/alshedivat/al-folio/issues/130).)
 
@@ -244,7 +244,7 @@ scholar:
   last_name: Einstein
   first_name: [Albert, A.]
 ```
-If the entry matches the last name and one form of the first names, it will be underlined. 
+If the entry matches the last name and one form of the first names, it will be underlined.
 Keep meta-information about your co-authors in `_data/coauthors.yml` and Jekyll will insert links to their webpages automatically.
 The coauthor data format in `_data/coauthors.yml` is as follows,
 ```
@@ -260,14 +260,14 @@ The coauthor data format in `_data/coauthors.yml` is as follows,
   - firstname: ["Nathan", "N."]
     url: https://en.wikipedia.org/wiki/Nathan_Rosen
 
-"Bach": 
+"Bach":
   - firstname: ["Johann Sebastian", "J. S."]
     url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
 
   - firstname: ["Carl Philipp Emanuel", "C. P. E."]
     url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
 ```
-If the entry matches one of the combinations of the last names and the first names, it will be highlighted and linked to the url provided. 
+If the entry matches one of the combinations of the last names and the first names, it will be highlighted and linked to the url provided.
 
 </details>
 
