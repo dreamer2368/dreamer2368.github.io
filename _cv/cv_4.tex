@@ -119,8 +119,8 @@
 %\item Demonstrated the sensitivity algorithm
 %for the sensitivity of Debye shielding response and sheath edge formation.
 %\item Developed a Fortran-based 2D finite-volume Vlasov solver for validation of the new sensitivity algorithm.
-\item Uncertainty modeling and propagation of plasma collision cross sections
-\item Plasma modeling for prediction of inductively-coupled plasma torch dynamics
+\item Identified uncertainties in electron-argon collision cross sections via Bayesian inference
+\item Orchestrated system modeling and large-scale numerical simulations to predict inductively-coupled argon plasma torch
 \end{rSubsection}
 
 \begin{rSubsection}{University of Illinois, Urbana-Champaign}{January 2015 - August 2021}{Graduate Researcher \textnormal{(with Prof. Jonathan Freund)}}{Urbana, IL}
@@ -135,8 +135,8 @@
 %for the sensitivity of Debye shielding response and sheath edge formation.
 %\item Developed a Fortran-based 2D finite-volume Vlasov solver for validation of the new sensitivity algorithm.
 \item Developed multi-point penalty-based optimization framework for chaotic turbulent flows.
-\item Implemented and validated turbulence statistics and sound radiation of a compressible Mach-1.3 jet simulation.
-\item Developed a novel regular gradient computing method for chaotic particle plasma simulations.
+\item Implemented and validated turbulence statistics and sound radiation of a compressible Mach-1.3 jet.
+%\item Developed a novel regular gradient computing method for chaotic particle plasma simulations.
 \end{rSubsection}
 
 \begin{rSubsection}{Sandia National Laboratories}{January 2017 - May 2017}{Student Intern \textnormal{(with Dr. Stephen D. Bond, Dr. Eric C. Cyr)}}{Albuquerque, NM}
@@ -228,24 +228,29 @@ J.\ B.\ Freund \& \textbf{S.\ W.\ Chung}, Lawrence Livermore National Laboratory
 %------------------------------------------------
 
 \begin{rSection}{Research tools developed}
-\begin{rSubsection}{\texttt{PASS}: Particle Adjoint Sensitivity Sandbox}{}
-{with J.\ B.\ Freund}{\url{https://github.com/dreamer2368/PASS}}
-\item A Fortran-based 1D Particle-in-Cell -- Monte-Carlo-Collision code for plasma kinetics simulations.
-\item Particle-exact/particle-pdf sensitivity solver
+\begin{rSubsection}{\texttt{TPS}: Torch Plasma Simulator}{}
+{with M.\ Bolinches, T.\ Oliver, K.\ Schulz, R.\ Moser}{\url{https://github.com/pecos/tps}}
+\item A discontinuous-Galerkin multi-physics application to support a plasma torch prediction,
+implmented upon a gpu-enabled finite-element library (\href{https://mfem.org}{\texttt{MFEM}})
+\item Formulated and implmented a two-temperature non-equilibrium reacting flow solver
 \end{rSubsection}
-%\clearpage
 \begin{rSubsection}{\texttt{magudi}: Dual-consistent, Discrete-exact Adjoint solver for Compressible Flows}{}
 {with R.\ Vishnampet, J.\ B.\ Freund}{\url{https://bitbucket.org/xpacc-dev/magudi/}}
-\item Created verification cases to ensure discrete-exactness.
-\item Developed a Python-based Bash/Flux-script generator for large-scale gradient-based optimization.
-\item Incorporated multi-point penalty-based optimization framework for chaotic dynamical systems.
+\item A Fortran-based compressible flow solver, equipped with discrete-exact adjoint-based gradient.
+\item Incorporated a Python-based framework for multi-point penalty-based optimization capability.
 \end{rSubsection}
 \begin{rSubsection}{\texttt{adjoint playground}: Adjoint, penalty-based optimization for chaotic flow controls}{}
 {with J.\ B.\ Freund}{\em Available upon request}
 \item A MATLAB-based penalty-based optimization framework for various chaotic dynamical systems.
 \item Provides a discrete-exact adjoint gradient for semi-implicit Runge-Kutta 4th-order time integrator.
 \end{rSubsection}
+\begin{rSubsection}{\texttt{PASS}: Particle Adjoint Sensitivity Sandbox}{}
+{with J.\ B.\ Freund}{\url{https://github.com/dreamer2368/PASS}}
+\item A Fortran-based 1D Particle-in-Cell -- Monte-Carlo-Collision code for plasma kinetics simulations.
+\item Particle-exact/particle-pdf sensitivity solver
+\end{rSubsection}
 \end{rSection}
+\clearpage
 
 %	EXAMPLE SECTION
 %----------------------------------------------------------------------------------------
@@ -285,12 +290,12 @@ Turbulence & Mathematical Methods II & Non-Newtonian Fluid Mechanics \& Rheology
 \begin{rSection}{Skills}
 
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Computer Languages &  Fortran, MATLAB, Python\\%, C/C++\\
-Parallel Programming & MPI \\
+Computer Languages &  Python, C++, MATLAB, Fortran\\
+Parallel Programming & MPI, CUDA  (\href{https://mfem.org}{\texttt{MFEM}})\\
 Scripting & Python, Bash, Flux \\
 Compiling & Make, CMake \\
 Documentation & \LaTeX, Vi/Vim, Mendeley \\
-Visualization and I/O & PLOT3D, Paraview \\
+Visualization and I/O & PLOT3D, HDF5, Paraview \\
 Presentation & Beamer, Keynote, Adobe Illustrator/Premiere \\
 \end{tabular}
 
