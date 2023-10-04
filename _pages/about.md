@@ -19,11 +19,14 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
 
-### Postdoctoral Staff Member
+#### Postdoctoral Staff Member
+
 [Lawrence Livermore National Laboratory](https://www.llnl.gov)
+
 Material Engineering Division
 
-### Research Interests
+#### Research Interests
+
 Reduced order modeling, Design optimization, Uncertainty quantification, Chaotic dynamics, Plasma physics
 <!-- I'm a postdoctoral staff member in <a href="https://www.llnl.gov/">Lawrence Livermore National Laboratory</a>. Currently, my research is focused on uncertainty quantification and plasma modeling for simulation prediction of inductively-coupled plasma torch. Generally, my research interest is modeling and prediction of multi-physics flow turbulence, and optimal control of its chaotic nonlinear dynamics. -->
 
