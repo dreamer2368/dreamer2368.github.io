@@ -37,8 +37,8 @@
 \name{Seung Whan Chung} % Your name
 %\address{502 E Michigan Ave. Apt 20, Urbana, IL 61801} % Your address
 %\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
-\address{Postdoctoral Fellow \\ Predictive Engineering \& Computational Science \\ University of Texas, Austin}
-\address{(+1)~217~417~1921 \\ \href{mailto:seung.chung@austin.utexas.edu}{seung.chung@austin.utexas.edu} \\ \href{https://www.chung-research.com}{chung-research.com} \\ \href{https://www.linkedin.com/in/kevin-seung-whan-chung}{linkedin}} % Your phone number and email
+\address{Postdoctoral Researcher \\ Material Engineering Division \\ Lawrence Livermore National Laboratory}
+\address{(+1)~217~417~1921 \\ \href{mailto:chung28@llnl.gov}{chung28@llnl.gov} \\ \href{https://www.chung-research.com}{chung-research.com} \\ \href{https://www.linkedin.com/in/kevin-seung-whan-chung}{linkedin}} % Your phone number and email
 %\address{https://-}
 
 \begin{document}
@@ -108,7 +108,13 @@
 %\item Developed a Fortran-based 2D finite-volume Vlasov solver for validation of the new sensitivity algorithm.
 %\end{rSubsection}
 
-\begin{rSubsection}{University of Texas at Austin}{September 2021 - Present}{Postdoctoral Fellow \textnormal{(with Prof. R. Moser, Prof. L. Raja, Dr. T. Oliver)}}{Austin, TX}
+\begin{rSubsection}{Lawrence Livermore National Laboratory}{January 2023 - Present}{Postdoctoral Staff Member}{Livermore, CA}
+\item Developed a scalable reduced order model with discontinuous Galerkin domain decomposition
+\item Orchestrated the development of \texttt{pylibROM}, python interface for the library of reduced order modeling
+\item Advised and mentored two summer student interns (Ping-Hsuan Tsai, Seung-Won Suh)
+\end{rSubsection}
+
+\begin{rSubsection}{University of Texas at Austin}{September 2021 - December 2022}{Postdoctoral Fellow \textnormal{(with Prof. R. Moser, Prof. L. Raja, Dr. T. Oliver)}}{Austin, TX}
 %\item Developed a fortran-based 1D PIC-MCC code to carry out plasma kinetics simulations.
 %\item Formulated discrete, particle-exact sensitivity in PIC simulation,
 %and demonstrated sensitivity degradation due to chaotic particle dynamics.
@@ -157,16 +163,39 @@
 \end{rSection}
 %------------------------------------------------
 %\clearpage
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Skills}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Computer Languages &  Python, C++, MATLAB, Fortran, pybind11 \\
+Parallel Programming & MPI \\
+Simulation Libraries & \href{https://mfem.org}{\texttt{MFEM}}, \href{https://www.librom.net/}{\texttt{libROM}}, \href{https://gmsh.info/}{\texttt{Gmsh}} \\
+Scripting & Python, Bash, Flux \\
+Version Control & Git, Docker \\
+Documentation & \LaTeX, Vi/Vim, Mendeley \\
+Visualization and I/O & PLOT3D, HDF5, Paraview \\
+Presentation & Beamer, Keynote, Adobe Illustrator/Premiere \\
+\end{tabular}
+
+\end{rSection}
 
 %----------------------------------------------------------------------------------------
+\clearpage
 \begin{rSection}{Publications}
-\textbf{S.\ W.\ Chung}, T.\ A.\ Oliver, L. Raja \& R.\ D.\ Moser,
-``Characterization of uncertainties in electron-argon collision cross sections under statistical principles,"
+\textbf{S.\ W.\ Chung}, Y.\ Choi, P.\ Roy, T.\ Roy, T.\ Moore, T.\ Lin \& S.\ E.\ Baker,
+``Train small, model big: scalable physics simulators via reduced order modeling and domain decomposition,"
 \textit{In preparation}.
 \par
-\textbf{S.\ W.\ Chung} \& J.\ B.\ Freund,
-``Finding an optimal free-space flow control with multi-point penalty method,"
-\textit{In preparation}.
+\textbf{S.\ W.\ Chung}, T.\ A.\ Oliver, L. Raja \& R.\ D.\ Moser,
+``Characterization of uncertainties in electron-argon collision cross sections under statistical principles,"
+\textit{Plasma Sources Science and Technology}, submitted, (2023).
+\par
+%\textbf{S.\ W.\ Chung} \& J.\ B.\ Freund,
+%``Finding an optimal free-space flow control with multi-point penalty method,"
+%\textit{In preparation}.
 \par
 \textbf{S.\ W.\ Chung} \& J.\ B.\ Freund,
 ``An optimization method for chaotic turbulent flows,"
@@ -178,24 +207,21 @@
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
-\begin{rSection}{Journal Referee}
-Journal of Fluid Mechanics (2022-present)
-%\par
-\end{rSection}
-
-%----------------------------------------------------------------------------------------
-\begin{rSection}{Invited Talks}
-J.\ B.\ Freund \& \textbf{S.\ W.\ Chung}, Lawrence Livermore National Laboratory, (2021).
-\par
-\textbf{S.\ W.\ Chung}, \textit{Fluid Mechanics Seminar}, University of Illinois at Urbana-Champaign, (2020).
-\par
-\textbf{S.\ W.\ Chung}, Sandia National Laboratories, (2017).
-\end{rSection}
-
-\clearpage
-%----------------------------------------------------------------------------------------
-\vspace*{-30pt}
+%\vspace*{-30pt}
 \begin{rSection}{Conference Talks}
+\textbf{S.\ W.\ Chung}, Y.\ Choi, P.\ Roy, T.\ Roy, T.\ Moore, T.\ Lin \& S.\ E.\ Baker,
+``Scalable physics-guided data-driven component model reduction for Stokes flow,"
+\textit{NeurIPS 2023 Workshop on the Machine Learning and the Physical Sciences}, submitted, (2023).
+\par
+P.-H.\ Tsai, \textbf{S.\ W.\ Chung}, D.\ Ghosh, J.\ Loffeld, Y.\ Choi \& J.\ L.\ Belof,
+``Accelerating Kinetic Simulations of Electrostatic Plasmas with Reduced-Order Modeling,"
+\textit{NeurIPS 2023 Workshop on the Machine Learning and the Physical Sciences}, submitted, (2023).
+\par
+S.\ W.\ Suh, \textbf{S.\ W.\ Chung}, T.\ Bremer \& Y.\ Choi,
+``Accelerating Flow Simulations using Online Dynamic Mode Decomposition,"
+\textit{NeurIPS 2023 Workshop on the Machine Learning and the Physical Sciences}, submitted, (2023).
+\par
+
 \textbf{S.\ W.\ Chung} \& J.\ B.\ Freund. "Finding an optimal flow control with multi-point penalty method,"
 \textit{Bulletin of the American Physical Society}, \textbf{67} (2022).
 
@@ -234,9 +260,40 @@ J.\ B.\ Freund \& \textbf{S.\ W.\ Chung}, Lawrence Livermore National Laboratory
 \textit{Bulletin of the American Physical Society}, \textbf{62} (2017).
 \end{rSection}
 
+%----------------------------------------------------------------------------------------
+\clearpage
+\begin{rSection}{Invited Talks}
+J.\ B.\ Freund \& \textbf{S.\ W.\ Chung}, Lawrence Livermore National Laboratory, (2021).
+\par
+\textbf{S.\ W.\ Chung}, \textit{Fluid Mechanics Seminar}, University of Illinois at Urbana-Champaign, (2020).
+\par
+\textbf{S.\ W.\ Chung}, Sandia National Laboratories, (2017).
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Journal Referee}
+Journal of Fluid Mechanics (2022-present)
+%\par
+\end{rSection}
+
 %------------------------------------------------
 
 \begin{rSection}{Research tools developed}
+\begin{rSubsection}{\texttt{scaleupROM}: Scalable Physics-guided Reduced Order Model}{}
+{ }{\em Available upon request}
+\item A scalable reduced order model for linear PDE systems with discontinuous Galerkin domain decomposition,
+implemented upon \href{https://mfem.org}{\texttt{MFEM}} and \href{https://www.librom.net}{\texttt{libROM}} framework
+\item Developed and demonstrated the framework for Poisson and Stokes flow equation
+\end{rSubsection}
+\begin{rSubsection}{\texttt{pylibROM}: python interface for libROM}{}
+{ }{\url{https://github.com/LLNL/pylibROM}}
+\item Implemented efficient python interface for \href{https://www.librom.net}{\texttt{libROM}} classes
+\item Demonstrated examples of DMD and projection-based ROM for various physics systems
+\end{rSubsection}
+\begin{rSubsection}{\texttt{libROM}: Library for Reduced Order Models}{}
+{ }{\url{https://www.librom.net/}}
+\item Implemented and maintained Docker container and CI workflow
+\end{rSubsection}
 \begin{rSubsection}{\texttt{TPS}: Torch Plasma Simulator}{}
 {with M.\ Bolinches, T.\ Oliver, K.\ Schulz, R.\ Moser}{\url{https://github.com/pecos/tps}}
 \item A discontinuous-Galerkin multi-physics application to support a plasma torch prediction,
@@ -249,7 +306,7 @@ implmented upon a gpu-enabled finite-element library (\href{https://mfem.org}{\t
 \item Supports low-Mach limit formulation for two-temperature non-equilibrium plasma
 \end{rSubsection}
 \begin{rSubsection}{\texttt{magudi}: Dual-consistent, Discrete-exact Adjoint solver for Compressible Flows}{}
-{with R.\ Vishnampet, J.\ B.\ Freund}{\url{https://bitbucket.org/xpacc-dev/magudi/}}
+{with R.\ Vishnampet, J.\ B.\ Freund}{\url{https://github.com/dreamer2368/magudi}}
 \item A Fortran-based compressible flow solver, equipped with discrete-exact adjoint-based gradient.
 \item Incorporated a Python-based framework for multi-point penalty-based optimization capability.
 \end{rSubsection}
@@ -309,24 +366,6 @@ Inviscid Flow & Computational Mechanics & Control System Theory \& Design \\
 Viscous Flow & Uncertainty Quantification &  Solid Mechanics I \\
 Instability and Transition & Asymptotic Method & Combustion Fundamentals \\
 Turbulence & Mathematical Methods II & Non-Newtonian Fluid Mechanics \& Rheology
-\end{tabular}
-
-\end{rSection}
-
-%----------------------------------------------------------------------------------------
-%	TECHNICAL STRENGTHS SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{Skills}
-
-\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Computer Languages &  Python, C++, MATLAB, Fortran\\
-Parallel Programming & MPI, CUDA  (\href{https://mfem.org}{\texttt{MFEM}})\\
-Scripting & Python, Bash, Flux \\
-Version Control & Git, Docker \\
-Documentation & \LaTeX, Vi/Vim, Mendeley \\
-Visualization and I/O & PLOT3D, HDF5, Paraview \\
-Presentation & Beamer, Keynote, Adobe Illustrator/Premiere \\
 \end{tabular}
 
 \end{rSection}
