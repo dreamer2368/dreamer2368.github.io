@@ -111,7 +111,7 @@
 \begin{rSubsection}{Lawrence Livermore National Laboratory}{January 2023 - Present}{Postdoctoral Staff Member}{Livermore, CA}
 \item Developed a scalable reduced order model with discontinuous Galerkin domain decomposition
 \item Orchestrated the development of \texttt{pylibROM}, python interface for the library of reduced order modeling
-\item Advised and mentored two summer student interns (Ping-Hsuan Tsai, Seung-Won Suh)
+\item Advised and mentored three student interns (Ping-Hsuan Tsai, Seung-Won Suh, Axel Larsson)
 \end{rSubsection}
 
 \begin{rSubsection}{University of Texas at Austin}{September 2021 - December 2022}{Postdoctoral Fellow \textnormal{(with Prof. R. Moser, Prof. L. Raja, Dr. T. Oliver)}}{Austin, TX}
@@ -187,7 +187,7 @@ Presentation & Beamer, Keynote, Adobe Illustrator/Premiere \\
 \begin{rSection}{Publications}
 \textbf{S.\ W.\ Chung}, Y.\ Choi, P.\ Roy, T.\ Roy, T.\ Moore, T.\ Lin \& S.\ E.\ Baker,
 ``Train small, model big: scalable physics simulators via reduced order modeling and domain decomposition,"
-\textit{In preparation}.
+\textit{Computer Methods in Applied Mechanics and Engineering}, submitted, (2023).
 \par
 \textbf{S.\ W.\ Chung}, T.\ A.\ Oliver, L. Raja \& R.\ D.\ Moser,
 ``Characterization of uncertainties in electron-argon collision cross sections under statistical principles,"
@@ -263,6 +263,8 @@ S.\ W.\ Suh, \textbf{S.\ W.\ Chung}, T.\ Bremer \& Y.\ Choi,
 %----------------------------------------------------------------------------------------
 \clearpage
 \begin{rSection}{Invited Talks}
+\textbf{S.\ W.\ Chung}, \textit{FEM@LLNL Seminar}, Lawrence Livermore National Laboratory, (2024).
+\par
 J.\ B.\ Freund \& \textbf{S.\ W.\ Chung}, Lawrence Livermore National Laboratory, (2021).
 \par
 \textbf{S.\ W.\ Chung}, \textit{Fluid Mechanics Seminar}, University of Illinois at Urbana-Champaign, (2020).
@@ -281,9 +283,9 @@ Journal of Fluid Mechanics (2022-present)
 \begin{rSection}{Research tools developed}
 \begin{rSubsection}{\texttt{scaleupROM}: Scalable Physics-guided Reduced Order Model}{}
 { }{\url{https://github.com/LLNL/scaleupROM}}
-\item A scalable reduced order model for linear PDE systems with discontinuous Galerkin domain decomposition,
-implemented upon \href{https://mfem.org}{\texttt{MFEM}} and \href{https://www.librom.net}{\texttt{libROM}} framework
-\item Developed and demonstrated the framework for Poisson and Stokes flow equation
+\item A data-driven discontinuous Galerkin FEM for general PDE systems
+based upon \href{https://mfem.org}{\texttt{MFEM}} and \href{https://www.librom.net}{\texttt{libROM}}
+\item Developed and demonstrated the framework for various physics
 \end{rSubsection}
 \begin{rSubsection}{\texttt{pylibROM}: python interface for libROM}{}
 { }{\url{https://github.com/LLNL/pylibROM}}
@@ -300,15 +302,15 @@ implemented upon \href{https://mfem.org}{\texttt{MFEM}} and \href{https://www.li
 implmented upon a gpu-enabled finite-element library (\href{https://mfem.org}{\texttt{MFEM}})
 \item Formulated and implmented a two-temperature non-equilibrium reacting flow solver
 \end{rSubsection}
-\begin{rSubsection}{\texttt{torch1d}: one-dimensional reduced-model for inductively-coupled plasma torch}{}
-{with T.\ Oliver, R.\ Moser}{\url{https://github.com/pecos/torch1d}}
-\item A Python-based finite-difference solver for a one-dimensional reduced torch model
-\item Supports low-Mach limit formulation for two-temperature non-equilibrium plasma
-\end{rSubsection}
 \begin{rSubsection}{\texttt{magudi}: Dual-consistent, Discrete-exact Adjoint solver for Compressible Flows}{}
 {with R.\ Vishnampet, J.\ B.\ Freund}{\url{https://github.com/dreamer2368/magudi}}
 \item A Fortran-based compressible flow solver, equipped with discrete-exact adjoint-based gradient.
 \item Incorporated a Python-based framework for multi-point penalty-based optimization capability.
+\end{rSubsection}
+\begin{rSubsection}{\texttt{torch1d}: one-dimensional reduced-model for inductively-coupled plasma torch}{}
+{with T.\ Oliver, R.\ Moser}{\url{https://github.com/pecos/torch1d}}
+\item A Python-based finite-difference solver for a one-dimensional reduced torch model
+\item Supports low-Mach limit formulation for two-temperature non-equilibrium plasma
 \end{rSubsection}
 \begin{rSubsection}{\texttt{adjoint playground}: Adjoint, penalty-based optimization for chaotic flow controls}{}
 {with J.\ B.\ Freund}{\em Available upon request}
