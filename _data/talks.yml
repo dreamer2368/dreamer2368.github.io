@@ -1,4 +1,66 @@
 # talks
+- conference: Lawrence Livermore National Laboratory
+  invited: true
+  year: 2024
+  title: Data-driven discontinuous Galerkin FEM via Reduced Order Modeling and Domain Decomposition
+  speakers:
+    - speaker: S. W. Chung
+
+- conference: NeurIPS 2023 Workshop on the Machine Learning and the Physical Sciences
+  invited: false
+  year: 2023
+  title: Scalable physics-guided data-driven component model reduction for Stokes flow
+  speakers:
+    - speaker: S. W. Chung
+    - speaker: Y. Choi
+    - speaker: P. Roy
+    - speaker: T. Roy
+    - speaker: T. Moore
+    - speaker: T. Y. Lin
+    - speaker: S. E. Baker
+
+- conference: NeurIPS 2023 Workshop on the Machine Learning and the Physical Sciences
+  invited: false
+  year: 2023
+  title: Accelerating Kinetic Simulations of Electrostatic Plasmas with Reduced-Order Modeling
+  speakers:
+    - speaker: P.-H. Tsai
+    - speaker: S. W. Chung
+    - speaker: D. Ghosh
+    - speaker: J. Loffeld
+    - speaker: Y. Choi
+    - speaker: J. L. Belof
+
+- conference: NeurIPS 2023 Workshop on the Machine Learning and the Physical Sciences
+  invited: false
+  year: 2023
+  title: Accelerating Flow Simulations using Online Dynamic Mode Decomposition
+  speakers:
+    - speaker: S. W. Suh
+    - speaker: S. W. Chung
+    - speaker: T. Bremer
+    - speaker: Y. Choi
+
+- conference: Bulletin of the American Physical Society
+  invited: false
+  year: 2022
+  number: 67
+  title: Finding an optimal flow control with multi-point penalty method
+  speakers:
+    - speaker: S. W. Chung
+    - speaker: J. B. Freund
+
+- conference: Bulletin of the American Physical Society
+  invited: false
+  year: 2022
+  number: 67
+  title: Characterization of uncertainties in electron-argon collision cross sections under statistical principles
+  speakers:
+    - speaker: S. W. Chung
+    - speaker: T. A. Oliver
+    - speaker: L. L. Raja
+    - speaker: R. D. Moser
+
 - conference: Bulletin of the American Physical Society
   invited: false
   year: 2021
