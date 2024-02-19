@@ -1,12 +1,9 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - dreamer2368
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - LLNL/scaleupROM
+  - LLNL/pylibROM
+  - LLNL/libROM
+  - pecos/tps
+  - dreamer2368/magudi
