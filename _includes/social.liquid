@@ -116,3 +116,8 @@
   </div>
   {% include scripts/wechatModal.liquid %}
 {% endif %}
+{% if site.cv %}
+  <span class="contact-icon text-center">
+    <a href="{{ site.cv | prepend: '/assets/pdf/' | relative_url }}" target="_blank" title="CV"><i class="ai ai-cv-square"></i></a>
+  </span>
+{% endif %}
