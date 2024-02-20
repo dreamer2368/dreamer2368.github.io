@@ -1,81 +1,73 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
-img: assets/img/3.jpg
-importance: 2
-category: work
-giscus_comments: true
+title: Optimal control of chaotic turbulent flows
+description: A proper algorithm for non-convex optimization with chaotic dynamics
+img: /assets/img/multistep/thumbnail.png
+importance: 1
+show: true
+category: 
+giscus_comments: false
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+Optimal flow control problem is
+to seek an optimal control $$\mathbf{\Theta}^{\ast}$$
+that minimizes a control objective $$\mathcal{J}$$ of a flow state $$\mathbf{q}$$.
+It is often formulated as an equality-constrained optimization,
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+<center>$$\mathbf{\Theta}^{\ast} = \mathrm{argmin}\;\mathcal{J}[\mathbf{q}]$$
+$$\text{such that} \qquad\mathcal{N}[\mathbf{q};\mathbf{\Theta}] = 0,$$</center>
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+where the equation $$\mathcal{N}$$ governs the dynamics of the flow.
+This optimization problem provides a mathematical framework
+to tackle many of scientific and engineering goals in fluid dynamics:
+* Passive/active flow control design
+* Grid adaptation and data-assimilated modeling
+* Flow instability analysis.
+
+Gradient-based methods can accelerate finding an optimal solution,
+using the gradient $$\nabla_{\Theta}\mathcal{J}$$ to control.
+They are particularly effective with high-dimensional optimization spaces.
+However, this is not true for chaotic turbulent flows.
+The so-called butterfly effect amplifies the gradient exponentially in time,
+with extreme sensitivity to initial condition.
+At the same time,
+The objective $$\mathcal{J}$$ becomes highly non-convex in the optimization space,
+for which any gradient-based method loses its effectiveness.
 
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    <div class="col-sm mt-3 mt-md-0" style="max-width: 95%;">
+        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/multistep/figure47.png' | relative_url }}" alt="" title="example image"/>
     </div>
 </div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+<div class="caption" style="max-width: 95%;">
+    An example control objective in the chaotic Lorenz dynamics:
+    its gradient to control amplifies exponentially (left);
+    its non-convex features frustrate searching for an effective local optimum (right).
 </div>
+
+I analyzed the mathematical mechanism of this challenge
+in the context of horseshoe mapping of chaotic dynamical systems,
+and proposed a proper optimization framework that can circumvent non-convex optimization.
+In essence, it temporarily enlarges search scale by introducing intermediate discontinuities in $$\mathbf{q}$$, then increasingly penalizes them.
+As an instance of effective control law, such optimized solution provides a pathway to harness the effective control law and analyze the system.
+This framework is demonstrated its effectiveness on various flow control problems,
+including three-dimensional turbulent Kolmogorov flow.
+
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+  <div class="col-sm mt-3 mt-md-0" style="padding:50% 0 0 0;position:relative;max-width: 50%;">
+    <iframe src="https://player.vimeo.com/video/634809587?h=d2d2328539&amp;badge=0&amp;autopause=0&amp;autoplay=1&amp;loop=1&amp;background=1&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:-10%;left:5%;width:100%;height:100%;" title="lorenz-optim.mp4"></iframe>
+    <div class="caption" style="position:absolute;top:80%;left:5%;width:100%;height:100%;">
+        Multi-step optimization for control of the Lorenz dynamics:
+        intermediate discontinuities (red) are temporarily introduced,
+        then increasingly penalized.
     </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
   </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+
+  <div class="col-sm mt-3 mt-md-0" style="padding:50% 0 0 0;position:relative;max-width: 37%;">
+    <iframe src="https://player.vimeo.com/video/634833504?h=01b4efddf7&amp;badge=0&amp;autopause=0&amp;autoplay=1&amp;loop=1&amp;background=1&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:-10%;left:15%;width:100%;height:100%;" title="3DKolmogorov-controlled.mov"></iframe>
+    <div class="caption" style="position:absolute;top:80%;left:15%;width:100%;height:100%;">
+        Pressure control of turbulent Kolmogorov flow:
+        Q-criterion iso-surfaces colored by pressure perturbation.
+    </div>
   </div>
 </div>
-```
-
-{% endraw %}

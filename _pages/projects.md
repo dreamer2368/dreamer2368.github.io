@@ -5,7 +5,7 @@ permalink: /projects/
 description: #A growing collection of your cool projects.
 nav: true
 nav_order: 3
-display_categories: [work, fun]
+display_categories: #[work, fun]
 horizontal: false
 ---
 
@@ -41,7 +41,7 @@ horizontal: false
 
 <!-- Display projects without categories -->
 
-{% assign sorted_projects = site.projects | sort: "importance" %}
+{% assign sorted_projects = site.projects | where: 'show', 'true' | sort: "importance" %}
 
   <!-- Generate cards for each project -->
 
