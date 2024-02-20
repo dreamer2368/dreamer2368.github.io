@@ -1,97 +1,104 @@
-- title: General Information
+- title: Basic Information
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
-    - name: Languages
-      value: English, German
+      value: Seung Whan Chung
+    - name: Email
+      value: chung28@llnl.gov
+    - name: Homepage
+      value: https://chung-research.com
+    # - name: Date of Birth
+    #   value: 6th February 1990
+    # - name: Languages
+    #   value: English, Korean
+
+- title: Academic Interests
+  type: list
+  # type: nested_list
+  contents:
+    - Optimal flow control, Design optimization
+    - Reduced order modeling
+    - Turbulent flow
+    - Chaotic dynamics
+    - Uncertainty quantification
+
+# - title: Skills
+#   type: map
+#   contents:
+#     - name: Computer Languages
+#       value: C++, Fortran, Matlab, Python, pybind11
+#     - name: Parallel Programming
+#       value: MPI
+#     - name: Physics Simulation Libraries
+#       value: <a href="https://mfem.org/">MFEM</a>, <a href="http://librom.net/">libROM</a>, <a href="https://gmsh.info/">Gmsh</a>
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: Ph.D. in Theoretical and Applied Mechanics
+      institution: <a href="https://illinois.edu/">University of Illinois at Urbana-Champaign</a>
+      year: 2021
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - "Advisor: Prof. J. B. Freund"
+        - "Thesis: Regular sensitivity calculation and gradient-based optimization of chaotic dynamical systems"
+    - title: M.S. in Theoretical and Applied Mechanics
+      institution: <a href="https://illinois.edu/">University of Illinois at Urbana-Champaign</a>
+      year: 2017
       description:
-        - Description 1.
-        - Description 2.
+        - "Advisor: Prof. J. B. Freund"
+    - title: B.S. in Mechanical and Aerospace Engineering
+      institution: <a href="https://en.snu.ac.kr/index.html">Seoul National University</a>
+      year: 2014
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Postdoctoral Staff Member
+      institution: <a href="https://www.llnl.gov/">Lawrence Livermore National Laboratory</a>
+      year: 2023 - Present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
+        - Developed a scalable reduced order model with discontinuous Galerkin domain decomposition
+        - Orchestrated the development of pylibROM, python interface for the library of reduced order modeling
+        - title: Advised and mentored three student interns
           contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+            - Ping-Hsuan Tsai
+            - Seung-Won Suh
+            - Axel Larsson
+    - title: Postdoctoral Researcher
+      institution: <a href="https://www.utexas.edu/">University of Texas at Austin</a>
+      year: 2021 - 2023
       description:
-        - Description 1.
-        - Description 2.
+        - Uncertainty quantification of electron-argon collision cross sections via Bayesian inference
+        - Developed a discontinuous-Galerkin HPC solver for large-scale non-equilibrium plasma simulations
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+    - title: Student Intern
+      institution: <a href="https://www.sandia.gov/">Sandia National Laboratories</a>
+      year: 2017
       description:
+        - Developed a novel regular gradient computing method for chaotic particle plasma simulations.
+        - Demonstrated gradient computation for Debye shielding response and sheath edge formation.
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
+    - title: Graduate Researcher
+      institution: <a href="https://illinois.edu/">University of Illinois at Urbana-Champaign</a>
+      year: 2014 - 2021
+      description:
+        - Developed multi-point penalty-based optimization framework for chaotic turbulent flows.
+        - Implemented and validated turbulence statistics and sound radiation of a compressible Mach-1.3 jet.
 
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+# - title: Open Source Projects
+#   type: time_table
+#   contents:
+#     - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
+#       year: 2015-now
+#       description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
 
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
-      items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
-      items:
-        - Max Planck Medal
-
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Topic 1.
-      items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
-
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+# - title: Honors and Awards
+#   type: time_table
+#   contents:
+#     - year: 1921
+#       items:
+#         - Nobel Prize in Physics
+#         - Matteucci Medal
+#     - year: 2029
+#       items:
+#         - Max Planck Medal
