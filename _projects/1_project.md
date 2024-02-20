@@ -1,81 +1,66 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
-img: assets/img/12.jpg
-importance: 1
+title: Sensitivity analysis in plasma kinetics
+description: Regular sensitivity computing algorithm in chaotic particle dynamics simulations
+img: /assets/img/pic-sensitivity/thumbnail.png
+importance: 2
 category: work
 related_publications: true
+show: true
+summary:
+  - item: Developed a fortran-based 1D PIC-MCC code to carry out plasma kinetics simulations.
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+Particle-in-cell (PIC) method is an effective simulation tool for plasma kinetics, where velocity distribution of plasma species deviates from equilibrium and often does not remain stationary.
+While mesh-based methods suffer from high-dimensional space-velocity phase space, PIC method utilizes coarse-grained Lagrangian particles to represent the plasma distribution with amenable computational costs.
+<div class="row">
+    <div class="col-sm-8 p-1" style="max-width: 66%;">
+      <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/pic-sensitivity/figure14.png' | relative_url }}" alt="" title="sheath configuation"/>
+    </div>
+    <div class="col-sm-4 p-0" style="max-width: 33%;">
+      <div class="row-sm p-0">
+        <iframe src="https://player.vimeo.com/video/583737878?autoplay=1&loop=1&autopause=0&background=1" style="position:absolute;top:-5%;width:100%;height:60%;" frameborder="0" allow="autoplay; picture-in-picture"></iframe>
+      </div>
+      <div class="row-sm p-0">
+        <iframe src="https://player.vimeo.com/video/583741200?autoplay=1&loop=1&autopause=0&background=1" style="position:absolute;top:25%;width:100%;height:100%;" frameborder="0" allow="autoplay; picture-in-picture"></iframe>
+      </div>
+    </div>
+</div>
+<div class="caption">
+    PIC simulation of a sheath edge formation: number densities of electrons and ions (left); space-velocity distribution of electrons (top right) and ions (bottom right).
+</div>
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+PIC simulation can benefit from sensitivity analysis, which provides a gradient of a quantity-of-interest $$\mathcal{J}$$ to parameters-of-interests $$\mathbf{\Theta}$$. Such gradient can be used to:
+* design optimization
+* uncertainty quantification.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
+Computing the sensitivity in PIC simulations, however, is challenging.
+Simulation particles mimicks the chaotic $$N$$-body dynamics of actual molecules, which are extremely sensitive to their initial conditions.
+While there is an 'useful' sensitivity of the plasma distribution as a whole,
+exploding sensitivities of individual particles mask it to be computed exactly.
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/pic-sensitivity/figure7.png' | relative_url }}" alt="" title="example image"/>
     </div>
 </div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
+Debye-shielding length scale $$\mathcal{J}$$ as a function of electron thermal velocity $$v_T$$ (left).
+Due to chaotic particle dynamics, $$\mathcal{J}(v_T)$$ becomes extremely non-smooth (right).
+
+I proposed and developed the particle-pdf approach, where the adjoint particles represent the sensitivity of plasma distribution, not individual plasma particles. The proposed approach avoids chaotic sensitivities of particles and computes the useful sensitivity at a computational cost similar to the original plasma simulation.
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    <div class="col-sm-8 p-1" style="max-width: 66%;">
+        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/pic-sensitivity/figure1.png' | relative_url }}" alt="" title="example image"/>
+    </div>
+    <div class="col-sm-4 p-0" style="max-width: 33%;">
+      <div class="row-sm py-1">
+        <img class="img-fluid rounded" src="{{ '/assets/img/pic-sensitivity/electron.sensitivity.png' | relative_url }}" alt="" title="sheath configuation"/>
+      </div>
+      <div class="row-sm pt-1">
+        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/pic-sensitivity/ion.sensitivity.png' | relative_url }}" alt="" title="sheath configuation"/>
+      </div>
     </div>
 </div>
 <div class="caption">
-    This image can also have a caption. It's like magic.
+Sensitivity of the potential drop to the temperature ratio (left), in the sheath-edge formation.
+Electron sensitivity distribution (top-right) and ion sensitivity distribution (bottom-right).
 </div>
-
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
