@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>"Kevin" SeungWhan Chung | blank</title>
+<title>"Kevin" SeungWhan Chung | Optimal control of chaotic turbulent flows</title>
 <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 ">
 
@@ -29,7 +29,7 @@
 <link rel="shortcut icon" href="/assets/img/favicon.png">
 <link rel="stylesheet" href="/assets/css/main.css">
 
-<link rel="canonical" href="/blog/">
+<link rel="canonical" href="/projects/chaotic_flow_control/">
 
 <!-- JQuery -->
 <!-- jQuery -->
@@ -160,56 +160,84 @@
     <div class="container mt-5">
       <div class="post">
 
-  <div class="header-bar">
-    <h1></h1>
-    <h2>a simple whitespace theme for academics</h2>
+  <header class="post-header">
+    <h1 class="post-title">Optimal control of chaotic turbulent flows</h1>
+    <p class="post-description">A proper algorithm for non-convex optimization with chaotic dynamics</p>
+  </header>
+
+  <article>
+    <p>Optimal flow control problem is
+to seek an optimal control \(\mathbf{\Theta}^{\ast}\)
+that minimizes a control objective \(\mathcal{J}\) of a flow state \(\mathbf{q}\).
+It is often formulated as an equality-constrained optimization,</p>
+
+<center>$$\mathbf{\Theta}^{\ast} = \mathrm{argmin}\;\mathcal{J}[\mathbf{q}]$$
+$$\text{such that} \qquad\mathcal{N}[\mathbf{q};\mathbf{\Theta}] = 0,$$</center>
+
+<p>where the equation \(\mathcal{N}\) governs the dynamics of the flow.
+This optimization problem provides a mathematical framework
+to tackle many of scientific and engineering goals in fluid dynamics:</p>
+<ul>
+  <li>Passive/active flow control design</li>
+  <li>Grid adaptation and data-assimilated modeling</li>
+  <li>Flow instability analysis.</li>
+</ul>
+
+<p>Gradient-based methods can accelerate finding an optimal solution,
+using the gradient \(\nabla_{\Theta}\mathcal{J}\) to control.
+They are particularly effective with high-dimensional optimization spaces.
+However, this is not true for chaotic turbulent flows.
+The so-called butterfly effect amplifies the gradient exponentially in time,
+with extreme sensitivity to initial condition.
+At the same time,
+The objective \(\mathcal{J}\) becomes highly non-convex in the optimization space,
+for which any gradient-based method loses its effectiveness.</p>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0" style="max-width: 95%;">
+        <img class="img-fluid rounded z-depth-1" src="/assets/img/multistep/figure47.png" alt="" title="example image" />
+    </div>
+</div>
+<div class="caption" style="max-width: 95%;">
+
+    An example control objective <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">J</mi></mrow><annotation encoding="application/x-tex">\mathcal{J}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.78055em;vertical-align:-0.09722em;"></span><span class="mord"><span class="mord mathcal" style="margin-right:0.18472em;">J</span></span></span></span></span> in the chaotic Lorenz dynamics:
+    its gradient to control amplifies exponentially (left);
+    its non-convex features frustrate searching for an effective local optimum (right).
+
+</div>
+
+<p>I analyzed the mathematical mechanism of this challenge
+in the context of horseshoe mapping of chaotic dynamical systems,
+and proposed a proper optimization framework that can circumvent non-convex optimization.
+In essence, it temporarily enlarges search scale by introducing intermediate discontinuities in \(\mathbf{q}\), then increasingly penalizes them.
+As an instance of effective control law, such optimized solution provides a pathway to harness the effective control law and analyze the system.
+This framework is demonstrated its effectiveness on various flow control problems,
+including three-dimensional turbulent Kolmogorov flow.</p>
+
+<div class="row">
+  <div class="col-sm mt-3 mt-md-0" style="padding:50% 0 0 0;position:relative;max-width: 50%;">
+    <iframe src="https://player.vimeo.com/video/634809587?h=d2d2328539&amp;badge=0&amp;autopause=0&amp;autoplay=1&amp;loop=1&amp;background=1&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" style="position:absolute;top:-10%;left:5%;width:100%;height:100%;" title="lorenz-optim.mp4"></iframe>
+    <div class="caption" style="position:absolute;top:80%;left:5%;width:100%;height:100%;">
+      
+          Multi-step optimization for control of the Lorenz dynamics:
+          intermediate discontinuities (red) are temporarily introduced,
+          then increasingly penalized.
+      
+    </div>
   </div>
 
-
-  <ul class="post-list">
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2020/github-metadata/">a post with github metadata</a></h3>
-        <p class="post-meta">September 28, 2020</p>
-        <p>a quick run down on accessing github metadata.</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2020/twitter/">a post with twitter</a></h3>
-        <p class="post-meta">September 28, 2020</p>
-        <p>an example of a blog post with twitter</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2018/distill/">a distill-style blog post</a></h3>
-        <p class="post-meta">December 22, 2018</p>
-        <p>an example of a distill-style blog post and main elements</p>
-      </li>
-    
-  </ul>
-
-  
-<nav aria-label="Blog page naviation">
-  <ul class="pagination pagination-lg justify-content-center">
-    <li class="page-item disabled">
-      <a class="page-link" href="" tabindex="-1" aria-disabled="">Newer</a>
-    </li>
-    
+  <div class="col-sm mt-3 mt-md-0" style="padding:50% 0 0 0;position:relative;max-width: 37%;">
+    <iframe src="https://player.vimeo.com/video/634833504?h=01b4efddf7&amp;badge=0&amp;autopause=0&amp;autoplay=1&amp;loop=1&amp;background=1&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" style="position:absolute;top:-10%;left:15%;width:100%;height:100%;" title="3DKolmogorov-controlled.mov"></iframe>
+    <div class="caption" style="position:absolute;top:80%;left:15%;width:100%;height:100%;">
       
-        <li class="page-item active"><a class="page-link" href="/blog/index.html" title="blank">1</a></li>
+          Pressure control of turbulent Kolmogorov flow:
+          Q-criterion iso-surfaces colored by pressure perturbation.
       
-        <li class="page-item "><a class="page-link" href="/blog/page/2/index.html" title="blank - page 2">2</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/3/index.html" title="blank - page 3">3</a></li>
-      
-    
-    <li class="page-item ">
-      <a class="page-link" href="/blog/page/2/">Older</a>
-    </li>
-  </ul>
-</nav>
+    </div>
+  </div>
+</div>
 
-
+  </article>
 
 </div>
 
