@@ -12,6 +12,7 @@ all-redirect: $(TALKNAME).pdf
 
 $(TALKNAME).pdf: $(TALKNAME).tex resume.cls
 	pdflatex $(TALKNAME)
+	cp $(TALKNAME).pdf ../assets/pdf/
 
 clean:
 	rm -f *.vrb *.tex~ *.toc *.aux *.log *.nav *.out *.snm *.flc
