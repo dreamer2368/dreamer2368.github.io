@@ -14,6 +14,7 @@
 }
 
 @article{Chung2024scaleup,
+abbr = {CMAME},
 title = {Train small, model big: Scalable physics simulators via reduced order modeling and domain decomposition},
 journal = {Computer Methods in Applied Mechanics and Engineering},
 volume = {427},
@@ -21,7 +22,7 @@ pages = {117041},
 year = {2024},
 issn = {0045-7825},
 doi = {https://doi.org/10.1016/j.cma.2024.117041},
-url = {https://www.sciencedirect.com/science/article/pii/S0045782524002974},
+html = {https://www.sciencedirect.com/science/article/pii/S0045782524002974},
 author = {Seung Whan Chung and Youngsoo Choi and Pratanu Roy and Thomas Moore and Thomas Roy and Tiras Y. Lin and Du T. Nguyen and Christopher Hahn and Eric B. Duoss and Sarah E. Baker},
 keywords = {Reduced order model, E-pilot, Domain decomposition, Stokes flow, Poisson equation, Scalable physics simulator},
 abstract = {Numerous cutting-edge scientific technologies originate at the laboratory scale, but transitioning them to practical industry applications is a formidable challenge. Traditional pilot projects at intermediate scales are costly and time-consuming. An alternative, the pilot-scale model, relies on high-fidelity numerical simulations, but even these simulations can be computationally prohibitive at larger scales. To overcome these limitations, we propose a scalable, physics-constrained reduced order model (ROM) method. The ROM identifies critical physics modes from small-scale unit components, projecting governing equations onto these modes to create a reduced model that retains essential physics details. We also employ Discontinuous Galerkin Domain Decomposition (DG-DD) to apply ROM to unit components and interfaces, enabling the construction of large-scale global systems without data at such large scales. This method is demonstrated on the Poisson and Stokes flow equations, showing that it can solve equations about 15–40 times faster with only ∼ 1% relative error. Furthermore, ROM takes one order of magnitude less memory than the full order model, enabling larger scale predictions at a given memory limitation.}
