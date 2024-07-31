@@ -1,4 +1,35 @@
 # talks
+- conference: 16th World Congress on Computational Mechanics and 4th Pan American Congress on Computational Mechanics
+  invited: false
+  year: 2024
+  title: "On-the-fly Dynamic Mode Decomposition"
+  speakers:
+    - speaker: S. W. Suh
+    - speaker: S. W. Chung
+    - speaker: Y. Choi
+
+- conference: 16th World Congress on Computational Mechanics and 4th Pan American Congress on Computational Mechanics
+  invited: false
+  year: 2024
+  title: "Divide and Conquer: Improved Training of Neural Ordinary Differential Equations Through Time-domain Splitting"
+  speakers:
+    - speaker: D. Chakraborty
+    - speaker: S. W. Chung
+    - speaker: R. Maulik
+
+- conference: 16th World Congress on Computational Mechanics and 4th Pan American Congress on Computational Mechanics
+  invited: false
+  year: 2024
+  title: "Train Small, Model Big: Scalable Robust Physics Simulator via Reduced Order Modeling and Domain Decomposition"
+  speakers:
+    - speaker: S. W. Chung
+    - speaker: Y. Choi
+    - speaker: P. Roy
+    - speaker: T. Roy
+    - speaker: T. Moore
+    - speaker: T. Y. Lin
+    - speaker: S. E. Baker
+
 - conference: Lawrence Livermore National Laboratory
   invited: true
   year: 2024
