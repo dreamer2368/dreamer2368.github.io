@@ -78,14 +78,6 @@ keywords = {Neural ordinary differential equations, Chaotic dynamical systems, S
 abstract = {Forecasting high-dimensional dynamical systems is a fundamental challenge in various fields, such as geosciences and engineering. Neural Ordinary Differential Equations (NODEs), which combine the power of neural networks and numerical solvers, have emerged as a promising algorithm for forecasting complex nonlinear dynamical systems. However, classical techniques used for NODE training are ineffective for learning chaotic dynamical systems. In this work, we propose a novel NODE-training approach that allows for robust learning of chaotic dynamical systems. Our method addresses the challenges of non-convexity and exploding gradients associated with underlying chaotic dynamics. Training data trajectories from such systems are split into multiple, non-overlapping time windows. In addition to the deviation from the training data, the optimization loss term further penalizes the discontinuities of the predicted trajectory between the time windows. The window size is selected based on the fastest Lyapunov time scale of the system. Multi-step penalty(MP) method is first demonstrated on Lorenz equation, to illustrate how it improves the loss landscape and thereby accelerates the optimization convergence. MP method can optimize chaotic systems in a manner similar to least-squares shadowing with significantly lower computational costs. Our proposed algorithm, denoted the Multistep Penalty NODE, is applied to chaotic systems such as the Kuramoto–Sivashinsky equation, the two-dimensional Kolmogorov flow, and ERA5 reanalysis data for the atmosphere. It is observed that MP-NODE provide viable performance for such chaotic systems, not only for short-term trajectory predictions but also for invariant statistics that are hallmarks of the chaotic nature of these dynamics.}
 }
 
-% @article{Chung2024,
-%   title={Characterization of uncertainties in electron-argon collision cross sections under statistical principles}, 
-%   author={Seung Whan Chung and Todd A. Oliver and Laxminarayan L. Raja and Robert D. Moser},
-%   year={2024},
-%   journal={arXiv preprint arXiv:2404.00467},
-%   html={https://arxiv.org/abs/2404.00467},
-% }
-
 @article{Chung2024scaleup,
 abbr = {CMAME},
 title = {Train small, model big: Scalable physics simulators via reduced order modeling and domain decomposition},
