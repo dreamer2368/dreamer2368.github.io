@@ -1,4 +1,16 @@
 # talks
+- conference: SIAM Conference on Computational Science and Engineering
+  invited: false
+  year: 2025
+  title: "Gaussian-Process-Based Parametric Latent Dynamics Modeling of Shock-Induced Pore Collapse Process"
+  speakers:
+    - speaker: S. W. Chung
+    - speaker: Y. Choi
+    - speaker: P. Tranquilli
+    - speaker: C. Miller
+    - speaker: H. K. Springer
+    - speaker: K. Sullivan
+
 - conference: SIAM Conference on Mathematics of Data Science
   invited: false
   year: 2024
