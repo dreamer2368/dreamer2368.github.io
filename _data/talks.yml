@@ -1,4 +1,16 @@
 # talks
+- conference: International Annual Conference of the Fraunhofer ICT
+  invited: false
+  year: 2025
+  title: "Bayesian Parametric Latent Dynamics Modeling of Shock-Induced Pore Collapse Process"
+  speakers:
+    - speaker: S. W. Chung
+    - speaker: Y. Choi
+    - speaker: P. Tranquilli
+    - speaker: C. Miller
+    - speaker: H. K. Springer
+    - speaker: K. Sullivan
+
 - conference: SIAM Conference on Computational Science and Engineering
   invited: false
   year: 2025
@@ -10,6 +22,30 @@
     - speaker: C. Miller
     - speaker: H. K. Springer
     - speaker: K. Sullivan
+
+- conference: NeurIPS 2024 Workshop on the Machine Learning and the Physical Sciences
+  invited: false
+  year: 2024
+  title: Scalable physics-guided data-driven component model reduction for steady Navier-Stokes flow
+  speakers:
+    - speaker: S. W. Chung
+    - speaker: Y. Choi
+    - speaker: P. Roy
+    - speaker: T. Roy
+    - speaker: T. Moore
+    - speaker: T. Y. Lin
+    - speaker: S. E. Baker
+
+- conference: NeurIPS 2024 Workshop on the Machine Learning and the Physical Sciences
+  invited: false
+  year: 2024
+  title: Scalable nonlinear manifold reduced order model for dynamical systems
+  speakers:
+    - speaker: I. Zanardi
+    - speaker: A. N. Diaz
+    - speaker: S. W. Chung
+    - speaker: M. Panesi
+    - speaker: Y. Choi
 
 - conference: SIAM Conference on Mathematics of Data Science
   invited: false
