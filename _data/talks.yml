@@ -1,4 +1,11 @@
 # talks
+- conference: Interdisciplinary Scientific Computing Laboratory Seminar
+  invited: true
+  year: 2025
+  title: Overview of data-driven finite element method and its pathway toward foundation model in computational science
+  speakers:
+    - speaker: S. W. Chung
+
 - conference: International Annual Conference of the Fraunhofer ICT
   invited: false
   year: 2025
