@@ -1,4 +1,16 @@
 # talks
+
+- conference: Joint Mathematics Meetings 2026
+  invited: false
+  year: 2026
+  title: "Non-Intrusive, Scalable Modeling of Physical Systems via Latent Space Element Method"
+  speakers:
+    - speaker: S. W. Chung
+    - speaker: Y. Choi
+    - speaker: C. Miller
+    - speaker: H. K. Springer
+    - speaker: K. Sullivan
+
 - conference: Interdisciplinary Scientific Computing Laboratory Seminar
   invited: true
   year: 2025
