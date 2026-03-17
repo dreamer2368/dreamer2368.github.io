@@ -9,3 +9,9 @@ _site
 Gemfile.lock
 node_modules/
 vendor
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+_cv/cv_4.pdf
