@@ -6,6 +6,20 @@
 ---
 ---
 
+@article{CHUNG2026114978,
+title = {Latent Space Dynamics Identification for Interface Tracking with Application to Shock-Induced Pore Collapse},
+journal = {Journal of Computational Physics},
+abbr = {JCP},
+pages = {114978},
+year = {2026},
+issn = {0021-9991},
+doi = {https://doi.org/10.1016/j.jcp.2026.114978},
+url = {https://www.sciencedirect.com/science/article/pii/S0021999126003311},
+author = {Seung Whan Chung and Christopher Miller and Youngsoo Choi and Paul Tranquilli and H. Keo Springer and Kyle Sullivan},
+keywords = {Reduced order modeling, Latent space dynamics, Gaussian process, Pore collapse process},
+abstract = {Capturing sharp, evolving interfaces remains a central challenge in reduced-order modeling, especially when data is limited and the system exhibits localized nonlinearities or discontinuities. We propose LaSDI-IT (Latent Space Dynamics Identification for Interface Tracking), a data-driven framework that combines low-dimensional latent dynamics learning with explicit interface-aware encoding to enable accurate and efficient modeling of physical systems involving moving material boundaries. At the core of LaSDI-IT is a revised autoencoder architecture that jointly reconstructs the physical field and an indicator function representing material regions or phases, allowing the model to track complex interface evolution without requiring detailed physical models or mesh adaptation. The latent dynamics are learned through linear regression in the encoded space and generalized across parameter regimes using Gaussian process interpolation with greedy sampling. We demonstrate LaSDI-IT on the problem of shock-induced pore collapse in high explosives, a process characterized by sharp temperature gradients and dynamically deforming pore geometries. The method achieves relative prediction errors below 9% across the parameter space, accurately recovers key quantities of interest such as pore area and hot spot formation, and matches the performance of dense training with only half the data. This latent dynamics prediction was 106 times faster than the conventional high-fidelity simulation, proving its utility for multi-query applications. These results highlight LaSDI-IT as a general, data-efficient framework for modeling discontinuity-rich systems in computational physics, with potential applications in multiphase flows, fracture mechanics, and phase change problems.}
+}
+
 @misc{chung2026hardconstrainedphysicsinformedneuralnetworks,
   title={Hard-constrained Physics-informed Neural Networks for Interface Problems}, 
   author={Seung Whan Chung and Stephen Castonguay and Sumanta Roy and Michael Penwarden and Yucheng Fu and Pratanu Roy},
@@ -55,16 +69,6 @@ url = {https://www.sciencedirect.com/science/article/pii/S0010465526000214},
 author = {Ping-Hsuan Tsai and Seung Whan Chung and Debojyoti Ghosh and John Loffeld and Youngsoo Choi and Jonathan L. Belof},
 keywords = {Reduced order modeling, Vlasov-Poisson equation, Electrostatic plasmas, Solution manifold decomposition, Machine learning},
 abstract = {Despite advancements in high-performance computing and modern numerical algorithms, computational cost remains prohibitive for multi-query kinetic plasma simulations. In this work, we develop data-driven reduced-order models (ROMs) for collisionless electrostatic plasma dynamics, based on the kinetic Vlasov-Poisson equation. Our ROM approach projects the equation onto a linear subspace defined by the proper orthogonal decomposition (POD) modes. We introduce an efficient tensorial method to update the nonlinear term using a precomputed third-order tensor. We capture multiscale behavior with a minimal number of POD modes by decomposing the solution manifold into multiple time windows and creating temporally local ROMs. We consider two strategies for decomposition: one based on the physical time and the other based on the electric field energy. Applied to the 1D1V Vlasov–Poisson simulations, that is, prescribed E-field, Landau damping, and two-stream instability, we demonstrate that our ROMs accurately capture the total energy of the system both for parametric and time extrapolation cases. The temporally local ROMs are more efficient and accurate than the single ROM. In addition, in the two-stream instability case, we show that the energy-windowing reduced-order model (EW-ROM) is more efficient and accurate than the time-windowing reduced-order model (TW-ROM). With the tensorial approach, EW-ROM solves the equation approximately 90 times faster than Eulerian simulations while maintaining a maximum relative error of $7.5\%$ for the training data and $11\%$ for the testing data.}
-}
-
-@misc{chung2025latentspacedynamicsidentification,
-  title={Latent Space Dynamics Identification for Interface Tracking with Application to Shock-Induced Pore Collapse}, 
-  author={Seung Whan Chung and Christopher Miller and Youngsoo Choi and Paul Tranquilli and H. Keo Springer and Kyle Sullivan},
-  year={2025},
-  eprint={2507.10647},
-  archivePrefix={arXiv},
-  primaryClass={physics.comp-ph},
-  url={https://arxiv.org/abs/2507.10647}, 
 }
 
 @misc{anderson2025mlasdimultistagelatentspace,
