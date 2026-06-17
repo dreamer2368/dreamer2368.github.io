@@ -71,10 +71,11 @@ keywords = {Reduced order modeling, Vlasov-Poisson equation, Electrostatic plasm
 abstract = {Despite advancements in high-performance computing and modern numerical algorithms, computational cost remains prohibitive for multi-query kinetic plasma simulations. In this work, we develop data-driven reduced-order models (ROMs) for collisionless electrostatic plasma dynamics, based on the kinetic Vlasov-Poisson equation. Our ROM approach projects the equation onto a linear subspace defined by the proper orthogonal decomposition (POD) modes. We introduce an efficient tensorial method to update the nonlinear term using a precomputed third-order tensor. We capture multiscale behavior with a minimal number of POD modes by decomposing the solution manifold into multiple time windows and creating temporally local ROMs. We consider two strategies for decomposition: one based on the physical time and the other based on the electric field energy. Applied to the 1D1V Vlasov–Poisson simulations, that is, prescribed E-field, Landau damping, and two-stream instability, we demonstrate that our ROMs accurately capture the total energy of the system both for parametric and time extrapolation cases. The temporally local ROMs are more efficient and accurate than the single ROM. In addition, in the two-stream instability case, we show that the energy-windowing reduced-order model (EW-ROM) is more efficient and accurate than the time-windowing reduced-order model (TW-ROM). With the tensorial approach, EW-ROM solves the equation approximately 90 times faster than Eulerian simulations while maintaining a maximum relative error of $7.5\%$ for the training data and $11\%$ for the testing data.}
 }
 
-@misc{anderson2025mlasdimultistagelatentspace,
+@article{anderson2025mlasdimultistagelatentspace,
   title={mLaSDI: Multi-stage latent space dynamics identification}, 
   author={William Anderson and Kevin Chung and Youngsoo Choi},
-  year={2025},
+  journal = {Computer Methods in Applied Mechanics and Engineering},
+  year={2026},
   eprint={2506.09207},
   archivePrefix={arXiv},
   primaryClass={cs.LG},
