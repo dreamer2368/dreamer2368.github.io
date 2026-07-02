@@ -6,6 +6,24 @@
 ---
 ---
 
+@ARTICLE{choi2026rigor,
+author={Choi, Youngsoo and Cheung, Siu Wun and Kim, Youngkyu and Tsai, Ping-Hsuan and Diaz, Alejandro N. and Zanardi, Ivan and Chung, Seung Whan and Copeland, Dylan and Kendrick, Coleman and Anderson, William and He, Xiaolong and Iliescu, Traian and Heinkenschloss, Matthias},
+journal={ Computing in Science \& Engineering },
+title={Rigor Over Hype: What Foundation Model Should Mean in Computational Science},
+year={5555},
+volume={},
+number={01},
+ISSN={1558-366X},
+pages={1-21},
+abstract={ The term foundation model is rapidly entering scientific machine learning, yet its meaning in computational science remains inconsistent. Models are increasingly labeled foundational without evidence of broad generalization across physical systems, geometries, boundary/initial conditions, tasks, or operating regimes. We propose a definition of foundation models tailored to computational science and identify core and desirable characteristics, drawing inspiration from classical foundational methods (FEM/FVM/FDM) that achieve wide reuse through problem-independent structure and principled enforcement of governing equations. We argue that scientific foundation models face unique barriers relative to language and vision models, including field-valued data, mesh and geometry dependence, heterogeneous physics, expensive adaptation, limited benchmarks, and strict requirements for interpretability and physical consistency. To make claims measurable, we introduce a reviewer- and author-friendly checklist for reporting training breadth, generalization axes, adaptation cost, extrapolation protocols, and scientific consistency checks. We also highlight a constructive hybrid path: local learning with global physics enforcement. },
+keywords={Modeling;Foundation models;Scientific computing;Finite element analysis;Learning (artificial intelligence);Reduced order systems},
+doi={10.1109/MCSE.2026.3695442},
+url = {https://doi.ieeecomputersociety.org/10.1109/MCSE.2026.3695442},
+publisher={IEEE Computer Society},
+address={Los Alamitos, CA, USA},
+month=may}
+
+
 @article{CHUNG2026114978,
 title = {Latent Space Dynamics Identification for Interface Tracking with Application to Shock-Induced Pore Collapse},
 journal = {Journal of Computational Physics},
@@ -72,14 +90,18 @@ abstract = {Despite advancements in high-performance computing and modern numeri
 }
 
 @article{anderson2025mlasdimultistagelatentspace,
-  title={mLaSDI: Multi-stage latent space dynamics identification}, 
-  author={William Anderson and Kevin Chung and Youngsoo Choi},
-  journal = {Computer Methods in Applied Mechanics and Engineering},
-  year={2026},
-  eprint={2506.09207},
-  archivePrefix={arXiv},
-  primaryClass={cs.LG},
-  url={https://arxiv.org/abs/2506.09207}, 
+title = {mLaSDI: Multi-stage latent space dynamics identification},
+journal = {Computer Methods in Applied Mechanics and Engineering},
+abbr = {CMAME},
+volume = {461},
+pages = {119173},
+year = {2026},
+issn = {0045-7825},
+doi = {https://doi.org/10.1016/j.cma.2026.119173},
+url = {https://www.sciencedirect.com/science/article/pii/S0045782526004469},
+author = {William Anderson and Seung Whan Chung and Robert Stephany and Youngsoo Choi},
+keywords = {Data-driven modeling, Reduced-order modeling, Latent space dynamics learning, Autoencoder},
+abstract = {Accurately solving partial differential equations (PDEs) is essential across many scientific disciplines. However, high-fidelity solvers can be computationally prohibitive, motivating the development of reduced-order models (ROMs). Recently, Latent Space Dynamics Identification (LaSDI) was proposed as a data-driven, non-intrusive ROM framework. LaSDI compresses the training data via an autoencoder and learns user-specified ordinary differential equations (ODEs) governing the latent dynamics, enabling rapid predictions for unseen parameters. While LaSDI has produced effective ROMs for numerous problems, the autoencoder must simultaneously reconstruct the training data and satisfy the imposed latent dynamics. These are often competing objectives which limit accuracy, particularly for complex or high-frequency phenomena. To address this limitation, we propose multi-stage Latent Space Dynamics Identification (mLaSDI). With mLaSDI, we train LaSDI sequentially in stages. After training the initial autoencoder, we train additional decoders which map the latent trajectories to residuals from previous stages. This staged residual learning, combined with periodic activation functions, enables recovery of high-frequency content without sacrificing interpretability of the latent dynamics. We further provide an error decomposition separating autoencoder and latent dynamics contributions, and prove that additional training stages cannot increase the training residual. Numerical experiments on a multiscale oscillating system, unsteady wake flow, and the 1D-1V Vlasov equation demonstrate that mLaSDI achieves significantly lower reconstruction and prediction errors, while requiring less training time and reduced hyperparameter tuning compared to standard LaSDI.}
 }
 
 @misc{choi2025definingfoundationmodelscomputational,
