@@ -1,5 +1,16 @@
 # talks
 
+- conference: 17th World Congress on Computational Mechanics and 10th European Congress on Computational Mechanics in Applied Sciences and Engineering
+  invited: true
+  year: 2026
+  title: "Beyond Soft Penalties: Hard-Constrained Neural Methods for Accurate Solution of Elliptic Interface"
+  speakers:
+    - speaker: S. W. Chung
+    - speaker: P. Roy
+    - speaker: S. T. Castonguay
+    - speaker: Y. Fu
+    - speaker: M. Penwarden
+
 - conference: Joint Mathematics Meetings 2026
   invited: false
   year: 2026
